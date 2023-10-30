@@ -62,700 +62,699 @@ RPG Manager is an Obsidian plugin to simplify the creation and running of role p
   - [7.5. Community](#75-community)
 - [8. Frequently Asked Questions](#8-frequently-asked-questions)
 
-## 1. Introduction
+## 1. 導入
 
-Welcome to RPG Manager, the Obsidian plugin designed to be the ultimate sidekick for Storytellers and Game Masters (GMs) preparing and running their campaigns. Are you tired of having your campaign notes scattered across multiple platforms and notebooks? RPG Manager was born out of the need for a central repository for all those brilliant ideas, notes, plotlines, and player character decisions that make up the tapestry of your game.
+RPG Manager へようこそ。Obsidian プラグインは、ストーリーテラーやゲーム マスター (GM) がキャンペーンを準備および実行するための究極の相棒となるように設計されています。 キャンペーン ノートが複数のプラットフォームやノートブックに分散していることにうんざりしていませんか? RPG Manager は、ゲームのタペストリーを構成するすべての素晴らしいアイデア、メモ、プロットライン、プレイヤー キャラクターの決定を保管する中央リポジトリの必要性から生まれました。
 
-**Why RPG Manager?** The beauty of RPG Manager lies in its simplicity and flexibility. It allows you to easily create relationships between various elements of your campaign, forming a web of information that aids in both the plotting and running of the game. Additionally, it is a system-agnostic tool, which means it can be used with any Tabletop Role-Playing Game (TTRPG) system, providing a versatile platform for managing campaigns without being tied to a specific rule set. However, this does mean that it may not cover every single detail of every system out there, so approach RPG Manager with an open mind and a spirit of adventure!
+**RPG マネージャーを選ぶ理由** RPG マネージャーの美しさは、そのシンプルさと柔軟性にあります。 これにより、キャンペーンのさまざまな要素間の関係を簡単に作成でき、ゲームの計画と実行の両方に役立つ情報の Web を形成できます。 さらに、これはシステムに依存しないツールであるため、あらゆるテーブルトップ ロールプレイング ゲーム (TTRPG) システムで使用でき、特定のルール セットに縛られることなくキャンペーンを管理するための多用途のプラットフォームを提供します。 ただし、これは、世にあるすべてのシステムの詳細をすべて網羅しているわけではないことを意味するため、広い心と冒険心を持って RPG Manager に取り組んでください。
 
-**Advantages of RPG Manager** include centralized information, relationships between elements, system-agnostic design, and overall efficiency in preparing campaigns. By providing a central location for all your ideas, notes, and information, and allowing you to create a web of relationships between various campaign elements, RPG Manager helps you craft compelling narratives while keeping track of all the essential details.
+**RPG マネージャー** の利点には、一元化された情報、要素間の関係、システムに依存しない設計、キャンペーンの準備における全体的な効率などが含まれます。 RPG マネージャーは、すべてのアイデア、メモ、情報を一元管理し、さまざまなキャンペーン要素間の関係を網の目状に作成できるようにすることで、重要な詳細をすべて追跡しながら、魅力的な物語を作成するのに役立ちます。
 
-So, embark on your storytelling journey with RPG Manager as your trusted companion. Embrace the possibilities it offers, and let it help you create unforgettable adventures.
+RPG Manager を信頼できる相棒として、ストーリーテリングの旅に出かけましょう。 それが提供する可能性を受け入れて、忘れられない冒険を生み出すのに役立ててください。
 
-### 1.1. Overview of the Plugin
+### 1.1. プラグインの概要
 
-RPG Manager is a plugin for Obsidian, designed to sit comfortably on top of it, like a well-worn wizard's hat. It associates metadata with the Obsidian notes and provides a user-friendly interface to navigate through the information. This is not just any metadata; it's the kind that helps manage the relationships between notes, a crucial aspect for any Storyteller/GM trying to weave a coherent narrative.
+RPG Manager は Obsidian のプラグインで、使い古された魔法使いの帽子のように、Obsidian の上に快適に収まるように設計されています。 メタデータを Obsidian メモに関連付け、情報内を移動するためのユーザーフレンドリーなインターフェイスを提供します。 これは単なるメタデータではありません。 これは音符間の関係を管理するのに役立ち、一貫した物語を紡ぎ出そうとするストーリーテラー/GM にとって重要な側面です。
 
-The **user interface** of RPG Manager is an HTML UI that organizes the metadata and displays it inside the Obsidian note. This means you don't have to flip back and forth between different applications or windows; everything you need is right there in your Obsidian note.
+RPG Manager の **ユーザー インターフェイス** は、メタデータを整理して Obsidian ノート内に表示する HTML UI です。 これは、異なるアプリケーションやウィンドウ間を行ったり来たりする必要がないことを意味します。 必要なものはすべて Obsidian メモの中にあります。
 
-The **metadata** is stored inside a code block in Obsidian, rather than in the front matter. This decision was made because the front matter does not handle the amount of information needed in a clean way and takes away a lot of space at the top of the note in Obsidian. However, you don't have to worry about the nitty-gritty details of formatting or syntax, as all the metadata are read and written through the UI. This means less time wrestling with code and more time crafting your epic tales.
+**メタデータ**は、前付ではなく、Obsidian のコード ブロック内に保存されます。 この決定は、Obsidian では前付が必要な情報量を適切に処理できず、注記上部の多くのスペースを奪っているために行われました。 ただし、すべてのメタデータは UI を通じて読み書きされるため、書式設定や構文の詳細について心配する必要はありません。 これは、コードと格闘する時間を減らし、壮大な物語を作り上げる時間を増やすことを意味します。
 
-### 1.2. Key Features
+### 1.2. 主な特長
 
-RPG Manager boasts a range of features designed to make your storytelling journey as smooth as a bard's charm. Here's a quick rundown of what you can expect:
+RPG マネージャーは、吟遊詩人の魅力のように物語の旅をスムーズにするために設計されたさまざまな機能を誇ります。 期待できることの簡単な概要は次のとおりです。
 
-1. **Centralized Information**: Gather all your campaign ideas, notes, and information in one place, ensuring nothing gets lost in the chaos of creation.
-2. **User-Friendly Interface**: An HTML UI embedded within your Obsidian notes to help you navigate and manage metadata without the need to juggle multiple applications or windows.
-3. **Metadata Management**: Store and manage the relationships between notes with metadata, crucial for weaving a coherent narrative. The metadata is stored inside a code block in Obsidian, minimizing clutter and maximizing efficiency.
-4. **Relationships Between Notes/Elements**: Manage the relationships between various campaign elements effortlessly, creating a web of information that aids in both plotting and running of the game.
-5. **System-Agnostic Design**: Designed to work with any TTRPG system, providing a versatile platform for managing campaigns without being tied to a specific rule set.
-6. **Elements**: Everything in RPG Manager is an "Element", whether it is a campaign, adventure, chapter, event, location, clue, non-player character, faction, object, monster, subplot, player character, session, or scene. This helps in organizing and structuring your campaign in a more coherent and logical manner.
+1. **一元化された情報**: キャンペーンのアイデア、メモ、情報をすべて 1 か所に集めて、創造の混乱の中で何も失われないようにします。
+2. **ユーザーフレンドリーなインターフェイス**: Obsidian ノート内に埋め込まれた HTML UI により、複数のアプリケーションやウィンドウを操作する必要がなく、メタデータの移動と管理が容易になります。
+3. **メタデータ管理**: メモ間の関係をメタデータとともに保存および管理します。これは、一貫した物語を紡ぐために重要です。 メタデータは Obsidian のコード ブロック内に保存され、乱雑さを最小限に抑え、効率を最大化します。
+4. **メモ/要素間の関係**: さまざまなキャンペーン要素間の関係を簡単に管理し、ゲームのプロットと実行の両方に役立つ情報の Web を作成します。
+5. **システムに依存しない設計**: あらゆる TTRPG システムで動作するように設計されており、特定のルール セットに縛られることなくキャンペーンを管理するための多用途のプラットフォームを提供します。
+6. **要素**: RPG マネージャーのすべては、キャンペーン、冒険、章、イベント、場所、手がかり、ノンプレイヤー キャラクター、派閥、オブジェクト、モンスター、サブプロット、プレイヤー キャラクター、 セッションとかシーンとか。 これは、キャンペーンをより一貫性のある論理的な方法で整理および構造化するのに役立ちます。
 
-Remember, this is just a taste of what RPG Manager has to offer. As you dive deeper into this documentation, you'll discover how each feature can be tailored to suit your unique storytelling style.
+これは RPG Manager が提供するもののほんの一部であることに注意してください。 このドキュメントを詳しく読んでいくと、独自のストーリーテリング スタイルに合わせて各機能をどのように調整できるかがわかります。
 
-### 1.3. Target Audience (Plotters, Sandboxers, Lazy GMs)
+### 1.3. 対象者 (プロッター、サンドボックス、怠惰な GM)
 
-RPG Manager is designed to be a versatile tool that can adapt to different storytelling styles. Whether you are a Plotter, Sandboxed, or a Lazy GM, this plugin has something for you.
+RPG マネージャーは、さまざまなストーリーテリング スタイルに適応できる多用途ツールとなるように設計されています。 あなたがプロッター、サンドボックス、または怠惰な GM であっても、このプラグインには何かがあります。
 
-1. **Plotters**: For those who like to meticulously plan their stories, RPG Manager offers a structured approach to organize and manage each element of your campaign, from the overarching narrative down to individual scenes and clues.
-2. **Sandboxers**: If you prefer creating open worlds and letting your players roam freely, RPG Manager helps in organizing events, locations, and clues, thus aiding in creating a coherent background for your player characters to interact with.
-3. **Lazy GMs**: Even if you don't prep much and prefer to jot down a few notes and bullet points before each session, RPG Manager can help in centralizing your ideas and notes, ensuring that you can quickly find what you need during the game.
+1. **プロッター**: ストーリーを綿密に計画したい人のために、RPG マネージャーは、全体的な物語から個々のシーンやヒントに至るまで、キャンペーンの各要素を整理および管理するための構造化されたアプローチを提供します。
+2. **サンドボクサー**: オープンワールドを作成し、プレイヤーを自由に歩き回らせたい場合は、RPG マネージャーがイベント、場所、ヒントの整理に役立ち、プレイヤー キャラクターが対話するための一貫した背景の作成に役立ちます。
+3. **怠惰な GM**: あまり準備をせず、各セッションの前にいくつかのメモや箇条書きを書き留めたい場合でも、RPG マネージャーを使用すると、アイデアやメモを一元管理して、何をすぐに見つけられるかを確認できます。 ゲーム中に必要になります。
 
-Tips for All GMs
+すべての GM へのヒント
 
-- Different GMs will use the plugin in different ways, using each element type's attributes or simply skipping them. Take some time to understand how each element and feature works and decide if it suits your style.
-- While RPG Manager offers a structured approach, it is designed to be flexible and adaptable. Don't be afraid to use it in a way that works best for you, even if that means not using certain features.
-- Remember, the goal of RPG Manager is to make your life as a Storyteller/GM easier and more organized, not to impose a rigid structure on your creative process.
+- GM が異なれば、各要素タイプの属性を使用したり、単純にスキップしたりするなど、さまざまな方法でプラグインを使用します。 時間をかけて各要素と機能がどのように機能するかを理解し、それが自分のスタイルに合うかどうかを判断してください。
+- RPG マネージャーは構造化されたアプローチを提供しますが、柔軟で適応できるように設計されています。 たとえ特定の機能を使用しないことになったとしても、自分にとって最適な方法で使用することを恐れないでください。
+- RPG マネージャーの目標は、ストーリーテラー/GM としての生活をより簡単かつ組織化することであり、創造的なプロセスに厳格な構造を課すことではないことを忘れないでください。
 
-### 1.4. Getting Started
+### 1.4. はじめる
 
-Embarking on a new adventure with RPG Manager is as exciting as rolling a natural 20! To get started, all you need is an open mind and a willingness to explore the plugin's features to see how they align with your storytelling style.
+RPG Manager で新しい冒険に乗り出すのは、自然に 20 を振るのと同じくらいエキサイティングです。 始めるために必要なのは、広い心と、プラグインの機能を探索して、それがあなたのストーリーテリング スタイルとどのように一致するかを確認する意欲だけです。
 
-- **Step 1: Create a Campaign**: The Campaign is the main container for all other elements in RPG Manager. Each Obsidian Vault can contain multiple campaigns, but each element (adventures, chapters, events, etc.) is available to one campaign only. So, start by creating a new campaign.
-- **Open Mind Approach**: As you begin to explore the plugin, keep an open mind. Try out different features, see how the elements interact with each other, and determine if RPG Manager suits your GM style. It's essential to understand that while RPG Manager offers a structured and organized approach, it is flexible enough to adapt to different styles.
+- **ステップ 1: キャンペーンを作成する**: キャンペーンは、RPG Manager の他のすべての要素のメイン コンテナです。 各 Obsidian Vault には複数のキャンペーンを含めることができますが、各要素 (アドベンチャー、章、イベントなど) は 1 つのキャンペーンでのみ利用できます。 したがって、新しいキャンペーンを作成することから始めます。
+- **オープンマインドアプローチ**: プラグインの探索を始めるときは、オープンマインドを保ってください。 さまざまな機能を試し、要素がどのように相互作用するかを確認し、RPG Manager があなたの GM スタイルに合うかどうかを判断してください。 RPG Manager は構造化され組織化されたアプローチを提供する一方で、さまざまなスタイルに適応できる柔軟性があることを理解することが重要です。
 
-Common Pitfalls
+よくある落とし穴
 
-- **One-size-fits-all Mentality**: RPG Manager is designed to be flexible and adaptable. Don't assume that you must use every feature or element. Use what works for you and your campaign.
-- **Overwhelmed by Choices**: There are many elements and features available in RPG Manager. Don't feel pressured to understand or use everything right away. Take your time, explore at your own pace, and gradually incorporate the features that suit your needs.
+- **万能の精神**: RPG マネージャーは、柔軟で順応性があるように設計されています。 すべての機能や要素を使用する必要があるとは考えないでください。 あなたとあなたのキャンペーンに適したものを使用してください。
+- **選択肢に圧倒**: RPG マネージャーには多くの要素や機能が用意されています。 すべてをすぐに理解したり使用したりしなければならないというプレッシャーを感じないでください。 時間をかけて自分のペースで検討し、ニーズに合った機能を徐々に取り入れてください。
 
-**Resources**
+**リソース**
 
-While there are no tutorials or guides available at the moment, we are working on creating video tutorials to help you get the most out of RPG Manager. Stay tuned!
+現時点では利用可能なチュートリアルやガイドはありませんが、RPG Manager を最大限に活用できるようにビデオ チュートリアルの作成に取り組んでいます。 乞うご期待！
 
-### 1.5. Upgrade your vault from v3
+### 1.5. ボールトを v3 からアップグレードする
 
-If you are already using RPG Manager and you update it to version 4, the plugin will not work. You have two options: use BRAT to revert to v3.4.5 or upgrade your vault.
+すでに RPG Manager を使用している場合、それをバージョン 4 に更新すると、プラグインは機能しなくなります。 オプションは 2 つあります。BRAT を使用して v3.4.5 に戻すか、ボールトをアップグレードします。
 
-Upgrading your vault is always a complicated matter, as the way you structured your data can be different from the way other storytellers have. For this reason, before upgrading your vault, **create a backup copy of it**!
+データの構造化方法が他のストーリーテラーの方法とは異なる場合があるため、Vault のアップグレードは常に複雑な問題です。 このため、コンテナーをアップグレードする前に、**コンテナーのバックアップ コピーを作成**してください。
 
-**Important**: if the upgrade process gets stuck, check the Inspector Console for errors, and look for help either on [Discord](https://discord.com/channels/686053708261228577/1022806716343144518) or on [Github](https://github.com/carlonicora/obsidian-rpg-manager/issues).
+**重要**: アップグレード プロセスが停止した場合は、Inspector Console でエラーがないか確認し、[Discord](https://discord.com/channels/686053708261228577/1022806716343144518) または [Github]( https://github.com/carlonicora/obsidian-rpg-manager/issues)。
 
-## 2. Installation
+## 2. インストール
 
-Installing RPG Manager is as easy as slaying a level 1 goblin! Follow the steps below to get started:
+RPG マネージャーのインストールは、レベル 1 のゴブリンを倒すのと同じくらい簡単です。 開始するには、以下の手順に従ってください。
 
-- **Already Installed**: If you are reading this documentation from inside Obsidian, congratulations! You have already installed the RPG Manager plugin, and you are ready to embark on your storytelling journey.
-- **Installation Steps**: If you haven't installed the plugin yet, follow these simple steps:
-  - Open Obsidian settings.
-  - Navigate to "Community Plugins".
-  - Turn off "Restricted Mode" if needed.
-  - Search for the "RPG Manager" plugin.
-  - Once found, click "Install" and then "Activate".
+- **すでにインストールされています**: このドキュメントを Obsidian 内から読んでいる場合、おめでとうございます。 RPG Manager プラグインはすでにインストールされており、ストーリーテリングの旅に乗り出す準備ができています。
+- **インストール手順**: プラグインをまだインストールしていない場合は、次の簡単な手順に従ってください。
+   - 黒曜石の設定を開きます。
+   - 「コミュニティプラグイン」に移動します。
+   - 必要に応じて「制限付きモード」をオフにします。
+   - 「RPG Manager」プラグインを検索します。
+   - 見つかったら、「インストール」をクリックしてから「アクティブ化」をクリックします。
 
-And voila! You are now ready to dive into the world of RPG Manager. There is no initial setup required, so you can start creating campaigns right away!
+そして出来上がり！ これで、RPG Manager の世界に飛び込む準備が整いました。 初期設定が不要なので、すぐにキャンペーン作成を始めることができます。
 
-### 2.1. Setting up your first Campaign
+### 2.1. 最初のキャンペーンを設定する
 
-Creating your first campaign with RPG Manager is a piece of cake! Here are two ways to do it:
+RPG Manager を使用して最初のキャンペーンを作成するのは簡単です。 これを行うには次の 2 つの方法があります。
 
-- **Command Palette**:
-  - Open the command palette by pressing **Ctrl + P** (Windows) or **Cmd + P** (Mac).
-  - Search for RPG Manager: create new Campaign.
-  - Select the command from the list.
-- **Side Panel**:
-  - Click on the d20 icon on the left sidebar.
-  - In the right panel, click "Create New... Campaign".
+- **コマンド パレット**:
+   - **Ctrl + P** (Windows) または **Cmd + P** (Mac) を押して、コマンド パレットを開きます。
+   - RPG Manager を検索: 新しいキャンペーンを作成します。
+   - リストからコマンドを選択します。
+- **サイドパネル**:
+   - 左側のサイドバーにある d20 アイコンをクリックします。
+   - 右側のパネルで、「新規キャンペーンの作成」をクリックします。
 
-Once you create the campaign, the note containing the campaign will automatically open. That's it! You have successfully created your first campaign. Now, let the adventure begin!
+キャンペーンを作成すると、キャンペーンを含むメモが自動的に開きます。 それでおしまい！ 最初のキャンペーンが正常に作成されました。 さあ、冒険を始めましょう！
 
-### 2.2. User Interface
+### 2.2. ユーザーインターフェース
 
-The User Interface (UI) of RPG Manager is designed to be intuitive and user-friendly. It is shown directly in the Obsidian note and helps users add/edit any details and see all the relevant information, attributes, and relationships of the elements.
+RPG Manager のユーザー インターフェイス (UI) は、直感的で使いやすいように設計されています。 これは、Obsidian ノートに直接表示され、ユーザーが詳細を追加/編集し、すべての関連情報、属性、要素の関係を確認するのに役立ちます。
 
-**Main Note**: In the main note, you will find all the editable attributes of an element. The type of an element is shown underneath its name.
+**メインノート**: メインノートには、要素の編集可能な属性がすべて表示されます。 要素のタイプはその名前の下に表示されます。
 
-**Option Panel**: On the right-hand side, the option panel provides additional functionalities. The option panel can be opened by clicking on the d20 icon on the left hand-side of Obsidian, or by clicking the "Options" link in the UI. The functionalities include:
+**オプション パネル**: 右側のオプション パネルは追加機能を提供します。 オプション パネルを開くには、Obsidian の左側にある d20 アイコンをクリックするか、UI の [オプション] リンクをクリックします。 機能には次のものが含まれます。
 
-- Adding New Attributes: You can add new attributes to an element.
-- Creating Relationships: Establish relationships with other elements.
-- Additional Functionalities: Depending on the element type, there might be other functionalities such as Gallery Management or the creation wizard.
+- 新しい属性の追加: 要素に新しい属性を追加できます。
+- 関係の作成: 他の要素との関係を確立します。
+- 追加機能: 要素の種類によっては、ギャラリー管理や作成ウィザードなどの他の機能がある場合があります。
 
-**Visual Indications**: The UI uses the colors of the installed theme in Obsidian. Currently, the UI is not customizable, but it will adapt to the colors of your chosen theme.
+**視覚的表示**: UI は、Obsidian にインストールされているテーマの色を使用します。 現在、UI はカスタマイズできませんが、選択したテーマの色に適応します。
 
-## 3. Overview of Elements
+## 3. 要素の概要
 
-In RPG Manager, everything is considered as an "Element." An element is a fundamental building block that represents various components of your RPG campaign, such as campaigns, adventures, characters, locations, events, etc. There are different types of elements, each serving a specific purpose and having its own set of attributes and functionalities.
+RPG Manager では、すべてが「要素」として考慮されます。 要素は、キャンペーン、アドベンチャー、キャラクター、場所、イベントなど、RPG キャンペーンのさまざまなコンポーネントを表す基本的な構成要素です。要素にはさまざまな種類があり、それぞれが特定の目的を果たし、独自の属性セットを持ちます。 機能性。
 
-All elements share some common properties:
+すべての要素は、いくつかの共通のプロパティを共有します。
 
-- **Description**: A text field where you can describe the element in detail.
-- **Gallery**: A section where you can add a collection of images related to the element.
-- **Relationships**: Links that connect an element to other elements in your campaign.
+- **説明**: 要素を詳細に説明できるテキストフィールド。
+- **ギャラリー**: 要素に関連する画像のコレクションを追加できるセクション。
+- **関係**: キャンペーン内の要素を他の要素に接続するリンク。
 
-Some elements have a **hierarchical structure**. This means that they can contain child elements, and these children can be positioned in a specific order. For instance, a 'Campaign' can contain multiple 'Adventures' and 'Sessions,' and these can be organized in a particular sequence. Similarly, an 'Adventure' can contain multiple 'Chapters,' and a 'Session' can contain multiple 'Scenes.'
+一部の要素は **階層構造** を持っています。 これは、子要素を含めることができ、これらの子を特定の順序で配置できることを意味します。 たとえば、「キャンペーン」には複数の「アドベンチャー」と「セッション」を含めることができ、これらを特定の順序で編成できます。 同様に、「アドベンチャー」には複数の「チャプター」を含めることができ、「セッション」には複数の「シーン」を含めることができます。
 
-Understanding the concept of elements is fundamental to using RPG Manager effectively. As you get more familiar with the different types of elements and how they relate to each other, you will be able to create, edit, and manage your campaigns with ease and efficiency.
+要素の概念を理解することは、RPG Manager を効果的に使用するための基礎です。 さまざまな種類の要素とそれらの要素の相互関係に慣れるにつれて、キャンペーンを簡単かつ効率的に作成、編集、管理できるようになります。
 
-### 3.1. Creating and Editing Elements
+### 3.1. 要素の作成と編集
 
-Creating and editing elements in RPG Manager is a breeze. Whether you are adding a new character, item, or event, the process is straightforward and intuitive.
+RPG Manager での要素の作成と編集は簡単です。 新しいキャラクター、アイテム、イベントを追加する場合でも、プロセスは簡単で直感的です。
 
-Creating New Elements:
+新しい要素の作成:
 
-To create a new element, you can use either the command palette or the side panel.
+新しい要素を作成するには、コマンド パレットまたはサイド パネルを使用できます。
 
-- **Command Palette**:
-  - Open the command palette by pressing **Ctrl + P** (Windows) or **Cmd + P** (Mac).
-  - Search for RPG Manager: create new ..., replacing the ellipsis with the type of element you wish to create (e.g., Adventure, Event, Location, etc.).
-  - Select the command from the list.
-- **Side Panel**:
-  - Click on the d20 icon on the left sidebar.
-  - In the right panel, click Create New... followed by the type of element you wish to create.
+- **コマンド パレット**:
+   - **Ctrl + P** (Windows) または **Cmd + P** (Mac) を押して、コマンド パレットを開きます。
+   - RPG マネージャーを検索します: 新しい ... を作成し、省略記号を作成する要素のタイプ (アドベンチャー、イベント、場所など) に置き換えます。
+   - リストからコマンドを選択します。
+- **サイドパネル**:
+   - 左側のサイドバーにある d20 アイコンをクリックします。
+   - 右側のパネルで、「新規作成...」をクリックし、続いて作成する要素のタイプをクリックします。
 
-Remember, every element type, apart from a campaign, should belong to a campaign.
+キャンペーンを除くすべての要素タイプはキャンペーンに属する必要があることに注意してください。
 
-To edit the information of existing element, simply navigate to the element in the Obsidian note and follow the User Interface (UI) to make the necessary changes. The UI is designed to be user-friendly and intuitive, making it easy to edit the attributes and relationships of each element.
+既存の要素の情報を編集するには、Obsidian ノート内の要素に移動し、ユーザー インターフェイス (UI) に従って必要な変更を加えるだけです。 UI はユーザーフレンドリーで直感的に設計されており、各要素の属性や関係を簡単に編集できます。
 
-Now that you know how to create and edit elements, you are well on your way to becoming an RPG Manager pro!
+要素を作成および編集する方法がわかったので、RPG マネージャーのプロへの道は順調に進んでいます。
 
-### 3.2 Relationships
+### 3.2 人間関係
 
-In RPG Manager, every element can contain links to other elements. These links become **relationships** between elements, forming the backbone of how information is linked to one another, which is crucial in building a campaign. Relationships can contain a description to better explain the connection between elements.
+RPG マネージャーでは、すべての要素に他の要素へのリンクを含めることができます。 これらのリンクは要素間の**関係**となり、情報を相互にリンクする方法のバックボーンを形成します。これはキャンペーンを構築する上で非常に重要です。 関係には、要素間の接続をより適切に説明するための説明を含めることができます。
 
-Relationships can be of different types:
+関係にはさまざまなタイプがあります。
 
-- **Bidirectional**: This occurs when the relationship between A and B is visible and relevant for both A and B.
-- **Unidirectional**: A relationship of this type is visible and important only in the element that defines it. If A is unidirectionally related to B, B will not see the same relationship. This is often needed to specify relationships between non-player characters.
-- **Parent**: Defines a relationship in which one of the elements is the parent of another. For example, Location A can contain Location B; in this case, the relationship has a parent type.
-- **Child**: The opposite of a Parent relationship.
+- **双方向**: これは、A と B の関係が可視であり、A と B の両方に関連する場合に発生します。
+- **一方向**: このタイプの関係は、それを定義する要素内でのみ表示され、重要です。 A が B に一方向に関連付けられている場合、B は同じ関係を認識しません。 これは多くの場合、ノンプレイヤー キャラクター間の関係を指定するために必要になります。
+- **親**: 要素の 1 つが別の要素の親である関係を定義します。 たとえば、場所 A に場所 B を含めることができます。 この場合、関係には親タイプがあります。
+- **子**: 親関係の反対。
 
-By establishing relationships between elements, the storyteller can create a complex web of interconnected information that can be easily navigated and understood, facilitating the development and management of the campaign.
+要素間の関係を確立することで、ストーリーテラーは、簡単にナビゲートして理解できる相互接続された情報の複雑なウェブを作成でき、キャンペーンの開発と管理を容易にします。
 
-### 3.3 Elements
+### 3.3 要素
 
-#### 3.3.1. Campaign
+#### 3.3.1. 運動
 
-The campaign is the cornerstone of RPG Manager, the main element a storyteller can create, and all its other elements will form the central repository of information for it.
+キャンペーンは RPG マネージャーの基礎であり、ストーリーテラーが作成できる主要な要素であり、その他すべての要素が情報の中央リポジトリを形成します。
 
-**Attributes**
+**属性**
 
-- **Description**: A text field where you can describe the overall theme, setting, and plot of your campaign. This is the only required attribute.
-- **Story Circle**: A space to develop your campaign's narrative using the story circle method. This is optional and particularly useful for plotters.
-- **Child Adventures**: A list of adventures that are part of the campaign. These are automatically created when you create one or more adventures.
-- **Child Sessions**: A list of sessions that are part of the campaign. These are automatically created when you create one or more sessions.
+- **説明**: キャンペーンの全体的なテーマ、設定、プロットを説明できるテキスト フィールド。 これが唯一の必須属性です。
+- **ストーリー サークル**: ストーリー サークル手法を使用してキャンペーンの物語を開発するためのスペース。 これはオプションであり、特にプロッターに便利です。
+- **子供の冒険**: キャンペーンの一部である冒険のリスト。 これらは、1 つ以上のアドベンチャーを作成すると自動的に作成されます。
+- **子セッション**: キャンペーンの一部であるセッションのリスト。 これらは、1 つ以上のセッションを作成すると自動的に作成されます。
 
-**Notes**:
+**ノート**：
 
-- Campaigns are always standalone and cannot be linked or associated with other campaigns.
-- The campaign does not show all the relationships to other elements, as they are children and not relationships.
+- キャンペーンは常にスタンドアロンであり、他のキャンペーンにリンクしたり関連付けたりすることはできません。
+- 他の要素は関係ではなく子であるため、キャンペーンでは他の要素との関係がすべて表示されるわけではありません。
 
-In the next sections, we will delve deeper into other elements and how they relate to and support the campaign.
+次のセクションでは、他の要素と、それらがキャンペーンにどのように関係し、サポートされるのかについて詳しく説明します。
 
-#### 3.3.2. Adventures
+#### 3.3.2. 冒険
 
-An adventure is a significant component of a campaign, encompassing a series of events or challenges that have a distinct beginning and conclusion. For instance, in the well-known Call of Cthulhu campaign, "Masks of Nyarlathotep," all events transpiring in New York could be classified as a single adventure. Each adventure comprises multiple chapters, which help in structuring the narrative in a more organized manner.
+アドベンチャーはキャンペーンの重要な要素であり、明確な始まりと終わりを持つ一連のイベントまたはチャレンジを含みます。 たとえば、有名なクトゥルフの呼び声キャンペーン「ニャルラトホテプの仮面」では、ニューヨークで起こるすべての出来事は 1 つの冒険として分類できます。 各冒険は複数の章で構成されており、物語をより体系的に構築するのに役立ちます。
 
-An adventure serves as a pivotal building block within a campaign, functioning as a coherent narrative unit with a specific beginning and end. It normally encompasses a series of events, locations od challenges that can be grouped together in a single narrative. For example, in the famed "Masks of Nyarlathotep" campaign for Call of Cthulhu, everything that happens in New York could be considered a single adventure. An adventure can be further organized into multiple chapters to streamline the storytelling process.
+アドベンチャーはキャンペーン内で極めて重要な構成要素として機能し、特定の始まりと終わりを持つ一貫した物語単位として機能します。 通常、これには、単一の物語にグループ化できる一連のイベント、場所、課題が含まれます。 たとえば、『Call of Cthulhu』の有名な「Masks of Nyarlathotep」キャンペーンでは、ニューヨークで起こるすべての出来事が 1 つの冒険と見なすことができます。 ストーリーテリングのプロセスを効率化するために、アドベンチャーを複数の章にさらに編成することができます。
 
-**Attributes**
+**属性**
 
-- **Description**: A text field where you can describe the overall theme, setting, and plot of your adventure. This is the only required attribute.
-- **Story Circle**: A space to develop your adventure's narrative using the story circle method. This is optional and particularly useful for plotters.
-- **Major Clues**: A list of significant clues and the narrative paths they could potentially lead to.
-- **Child Chapters**: A list of chapters that form part of the adventure. These are automatically generated when you create one or more chapters within the adventure.
-- **Kishōtenketsu**: A plot tool to structure and develop your narrative using a classic Chinese, Korean and Japanese style.
-- **Conflict**: A tool to describe conflicts that help to drive the narrative. They helps storytellers set up conflicts that are useful to identify unstructured plots to move the story forward.
+- **説明**: 冒険の全体的なテーマ、設定、プロットを説明できるテキスト フィールド。 これが唯一の必須属性です。
+- **ストーリー サークル**: ストーリー サークル手法を使用して冒険の物語を展開するスペース。 これはオプションであり、特にプロッターに便利です。
+- **主要な手がかり**: 重要な手がかりと、それらが潜在的に導く可能性のある物語の道筋のリスト。
+- **子章**: 冒険の一部を構成する章のリスト。 これらは、アドベンチャー内に 1 つ以上のチャプターを作成すると自動的に生成されます。
+- **起承転結**: 古典的な中国、韓国、日本のスタイルを使用して物語を構築し、展開するためのプロット ツールです。
+- **対立**: 物語を推進するのに役立つ対立を説明するツール。 これらは、ストーリーテラーが矛盾を設定するのに役立ち、ストーリーを前進させるための構造化されていないプロットを特定するのに役立ちます。
 
-**Notes**:
+**ノート**：
 
-- Each adventure can only belong to one campaign.
-- Adventures may consist of multiple chapters, which can be organized in a specific order to align with the story's progression.
+- 各アドベンチャーは 1 つのキャンペーンにのみ所属できます。
+- アドベンチャーは複数の章で構成されており、ストーリーの進行に合わせて特定の順序で編成できます。
 
-#### 3.3.3. Chapters
+#### 3.3.3. 章
 
-A chapter is a more focused and manageable segment of an adventure, a building block of an adventure. It typically focusses on a specific event or location that the player characters may encounter, and all the relationships and interactions they may have within that context. It serves as a segment of the narrative that leads to one or more destinations, which could be subsequent adventures or chapters. By breaking down an adventure into chapters, it becomes easier to manage the narrative flow, develop intricate relationships, and create immersive experiences for the players.
+章は、冒険のより集中的で管理しやすい部分であり、冒険の構成要素です。 通常、プレイヤー キャラクターが遭遇する可能性のある特定のイベントや場所、およびそのコンテキスト内で彼らが持つ可能性のあるすべての関係や相互作用に焦点を当てます。 これは、1 つまたは複数の目的地につながる物語の一部として機能し、その後の冒険や章となる可能性があります。 冒険を章に分割することで、物語の流れを管理し、複雑な関係を築き、プレイヤーにとって没入型の体験を生み出すことが容易になります。
 
-**Attributes**
+**属性**
 
-- **Description**: A text field where you can describe the overall theme, setting, and plot of your chapter. This is the only required attribute.
-- **Story Circle**: A space to develop your chapter's narrative using the story circle method. This is optional and particularly useful for plotters.
-- **Major Clues**: A list of major clues and where they lead.
-- **Kishōtenketsu**: A plot tool to structure and develop your narrative using a classic Chinese, Korean and Japanese style.
-- **Conflict**: A tool to describe conflicts that help to drive the narrative. They helps storytellers set up conflicts that are useful to identify unstructured plots to move the story forward.
+- **説明**: 章の全体的なテーマ、設定、プロットを説明できるテキスト フィールド。 これが唯一の必須属性です。
+- **ストーリー サークル**: ストーリー サークル手法を使用して章の物語を展開するためのスペースです。 これはオプションであり、特にプロッターに便利です。
+- **主要な手がかり**: 主要な手がかりとそれが導く場所のリスト。
+- **起承転結**: 古典的な中国、韓国、日本のスタイルを使用して物語を構築し、展開するためのプロット ツールです。
+- **対立**: 物語を推進するのに役立つ対立を説明するツール。 これらは、ストーリーテラーが矛盾を設定するのに役立ち、ストーリーを前進させるための構造化されていないプロットを特定するのに役立ちます。
 
-**Notes**
+**ノート**
 
-- A chapter can only belong to one adventure.
-- Chapters are the most granular level of organization within an adventure, and cannot be subdivided into sub-chapters.
+- チャプターは 1 つのアドベンチャーにのみ属することができます。
+- 章は、アドベンチャー内の構成の最も詳細なレベルであり、サブ章に細分化することはできません。
 
-#### 3.3.4. Events
+#### 3.3.4. イベント
 
-An event is a significant occurrence or happening in the narrative, something in which the player characters may become involved. It contains a description and leverages relationships to ensure they give information to the player characters. Events are crucial narrative elements that help to propel the story forward and create engaging experiences for the player characters.
+イベントとは、プレイヤーキャラクターが関与する可能性のある、物語の中で重要な出来事または出来事です。 これには説明が含まれており、関係を活用してプレイヤー キャラクターに情報を確実に提供します。 イベントは、ストーリーを前進させ、プレイヤー キャラクターに魅力的な体験を生み出すのに役立つ重要な物語要素です。
 
-**Attributes**
+**属性**
 
-- **Description**: A text field where you can describe the details of the event, such as what happens, who is involved, and any other pertinent information. This is a required attribute.
-- **Date**: The in-game date when the event occurs. This helps in maintaining the timeline of the narrative.
+- **説明**: 何が起こったのか、誰が関与しているのか、その他の関連情報など、イベントの詳細を説明できるテキスト フィールドです。 これは必須の属性です。
+- **日付**: イベントが発生したゲーム内の日付。 これは、物語のタイムラインを維持するのに役立ちます。
 
-**Notes**
+**ノート**
 
-- An event does not normally "lead" anywhere, but may contain relationships to clues and locations that do.
-- While there is no strict hierarchy or structure in events, they play a crucial role in the narrative and should be carefully crafted by the storytellers to ensure they are engaging and meaningful.
+- イベントは通常、どこにも「つながる」わけではありませんが、つながる手がかりや場所との関係が含まれる場合があります。
+- イベントには厳密な階層や構造はありませんが、物語の中で重要な役割を果たしており、魅力的で意味のあるものになるようにストーリーテラーが慎重に作成する必要があります。
 
-Events, while not unique in terms of metadata, are logically distinct narrative elements. Storytellers should consider them as proper events and craft their descriptions accordingly to create engaging and impactful moments in the narrative.
+イベントは、メタデータという点では一意ではありませんが、論理的には別個の物語要素です。 ストーリーテラーは、それらを適切な出来事として考慮し、それに応じて説明を作成し、物語の中で魅力的でインパクトのある瞬間を生み出す必要があります。
 
-#### 3.3.5. Locations
+#### 3.3.5. 所在地
 
-Locations represent the physical places within the game world where events occur and characters interact. They serve as the backdrop for the narrative and play a crucial role in setting the scene and immersing the players in the game world.
+ロケーションは、イベントが発生し、キャラクターが対話するゲーム世界内の物理的な場所を表します。 これらは物語の背景として機能し、シーンを設定し、プレイヤーをゲームの世界に引き込む上で重要な役割を果たします。
 
-**Attributes**
+**属性**
 
-- **Description**: A text field where you can describe the setting, notable features, and any other relevant details about the location. This is a required attribute.
-- **Address**: A text field where you can provide the physical address or any other identifier for the location. This is an optional field and can be customized to suit the GM's needs. For example, it could be a real-world address, coordinates on a map, or a description of a fictional or fantasy location.
+- **説明**: 設定、注目すべき機能、および場所に関するその他の関連詳細を説明できるテキスト フィールド。 これは必須の属性です。
+- **住所**: 物理的な住所または場所のその他の識別子を入力できるテキスト フィールド。 これはオプションのフィールドであり、GM のニーズに合わせてカスタマイズできます。 たとえば、現実世界の住所、地図上の座標、架空または空想の場所の説明などです。
 
-**Notes**
+**ノート**
 
-- Locations can be related to any other elements, including events, NPCs, and clues.
-- A location can be defined as a child of another location through relationships, but there is no strict hierarchy or structure that needs to be maintained.
+- 場所は、イベント、NPC、手がかりなど、他の要素に関連付けることができます。
+- ロケーションは関係を通じて別のロケーションの子として定義できますが、維持する必要がある厳密な階層や構造はありません。
 
-#### 3.3.6. Clues
+#### 3.3.6. 手がかり
 
-Clues are pieces of information that propel the plot forward. A clue should describe what the information is and how it can be found. This information is typically part of the clue's description. The relationships of a clue would usually be an event, a location, or a non-player character where the clue can be found and where it leads. However, any element can be related to any other element in RPG Manager, so a clue can also be related to adventures, campaigns, sessions, or any other elements as needed.
+手がかりとは、プロットを前進させるための情報の一部です。 手がかりには、情報が何であるか、またその情報をどのように見つけることができるかを説明する必要があります。 この情報は通常、手がかりの説明の一部です。 手がかりの関係は通常、手がかりが見つかり、それがどこにつながるかというイベント、場所、またはノンプレイヤー キャラクターです。 ただし、RPG Manager ではどの要素も他の要素に関連付けることができるため、必要に応じて手がかりをアドベンチャー、キャンペーン、セッション、またはその他の要素に関連付けることもできます。
 
-**Attributes**
+**属性**
 
-- **Description**: This is a text field where the storyteller/GM writes the details of the clue, what the information is, and how it can be found. This is the only required attribute for a clue.
+- **説明**: これは、ストーリーテラー/GM が手がかりの詳細、情報の内容、およびそれを見つける方法を書き込むテキスト フィールドです。 これは、手がかりに必要な唯一の属性です。
 
-**Notes**:
+**ノート**：
 
-- A clue can have as many relationships as needed, indicating where it can be found and where it leads. It all depends on the description the GM writes.
-- A clue can lead to multiple different locations, events, or non-player characters, or any combination thereof, depending on the GM's narrative.
+- 手がかりには、必要なだけ多くの関係を持たせることができ、それがどこで見つかるか、どこにつながるかを示します。 それはすべて GM が書く説明に依存します。
+- 手がかりは、GM の物語に応じて、複数の異なる場所、イベント、ノンプレイヤー キャラクター、またはそれらの組み合わせにつながる可能性があります。
 
-#### 3.3.6. Non-player characters
+#### 3.3.6. ノンプレイヤーキャラクター
 
-Non-player characters (NPCs) are the lifeblood of any campaign. They are the individuals that populate the world, providing context, challenges, and support to the player characters. Their presence contributes significantly to the atmosphere and narrative of the campaign.
+ノンプレイヤー キャラクター (NPC) は、あらゆるキャンペーンの生命線です。 彼らは世界に存在し、プレイヤー キャラクターにコンテキスト、課題、サポートを提供する個人です。 彼らの存在は、キャンペーンの雰囲気と物語に大きく貢献します。
 
-NPCs are multifaceted, having a range of attributes that define their role, personality, and journey throughout the campaign. While only the description is mandatory, the RPG Manager offers a comprehensive list of attributes that can be customized to create a well-rounded character:
+NPC は多面的であり、キャンペーン全体での役割、性格、旅程を定義するさまざまな属性を持っています。 説明のみが必須ですが、RPG マネージャーには、バランスの取れたキャラクターを作成するためにカスタマイズできる属性の包括的なリストが用意されています。
 
-**Attributes**
+**属性**
 
-- **Description**: A detailed overview of the NPC, encompassing physical appearance, personality traits, and other notable characteristics.
-- Type: Defines the importance of the NPC in the narrative as Main, Supporting, or Extra.
-- **Occupation**: A brief overview of the NPC's profession or role within the society.
-- **Character Arc**: Describes the trajectory of the NPC's development throughout the campaign, whether it is a Positive, Disillusionment, Fall, Corruption, or Flat arc.
-- **Beliefs**: The core values and principles that guide the NPC's actions and decisions.
-- **Ghost**: A significant event from the NPC's past that has shaped their beliefs and worldview. It can be a positive or negative turning point that has led them to perceive the world in a certain way.
-- **Lie**: A misconception that the NPC holds about themselves or the world around them.
-- **Need**: The underlying desire or requirement that drives the NPC, even if they are not consciously aware of it.
-- **Strengths**: The positive traits that empower the NPC and contribute to their success.
-- **Weaknesses**: The negative traits that hinder the NPC and create challenges for them.
-- **Behaviour**: The typical manner in which the NPC acts or responds to situations.
-- **Want**: The goals that the NPC actively pursues, even if they do not align with their true needs. This attribute influences their behavior and interactions with others.
-- **Stake**: A measure of the NPC's investment in their occupation, wants, and behaviors, on a scale from 1 to 10. It indicates the level of effort the NPC is willing to exert to achieve their goals.
-- **Opposition**: The forces or obstacles that stand in the way of the NPC achieving their wants.
+- **説明**: 外見、性格特性、その他の注目すべき特徴を含む、NPC の詳細な概要。
+- タイプ: 物語における NPC の重要性をメイン、サポート、またはエクストラとして定義します。
+- **職業**: 社会における NPC の職業または役割の簡単な概要。
+- **キャラクター アーク**: ポジティブ、幻滅、堕落、腐敗、フラット アークなど、キャンペーン全体にわたる NPC の成長の軌跡を説明します。
+- **信念**: NPC の行動と決定を導く核となる価値観と原則。
+- **ゴースト**: NPC の信念と世界観を形成した、NPC の過去の重要な出来事。 それは、彼らが世界を特定の方法で認識するようになった、ポジティブまたはネガティブなターニングポイントになる可能性があります。
+- **嘘**: NPC が自分自身や周囲の世界について抱いている誤解。
+- **ニーズ**: NPC が意識的に気づいていない場合でも、NPC を動かす根本的な欲求または要件。
+- **強み**: NPC に力を与え、成功に貢献するポジティブな特性。
+- **弱点**: NPC を妨げ、課題を引き起こす否定的な特性。
+- **行動**: NPC が状況に応じて行動または反応する典型的な方法。
+- **Want**: たとえ真のニーズと一致しない場合でも、NPC が積極的に追求する目標。 この属性は、彼らの行動や他者との交流に影響を与えます。
+- **ステーク**: NPC の職業、欲求、行動に対する投資の尺度。1 から 10 までのスケールで表されます。これは、NPC が目標を達成するために喜んで努力するレベルを示します。
+- **反対**: NPC が願望を達成するのを妨げる勢力または障害。
 
-While the RPG Manager provides a structured approach to creating NPCs, it also offers the flexibility for storytellers and GMs to customize the attributes to suit their needs. Not all attributes are necessary for every NPC, and the storyteller can select only those that are relevant to their character and narrative.
+RPG マネージャーは NPC を作成するための構造化されたアプローチを提供しますが、ストーリーテラーや GM がニーズに合わせて属性をカスタマイズできる柔軟性も提供します。 すべての属性がすべての NPC に必要なわけではなく、ストーリーテラーは自分のキャラクターと物語に関連する属性のみを選択できます。
 
-Additionally, the RPG Manager features a Wizard that assists storytellers in creating NPCs by guiding them through the process in order of importance. This tool streamlines the creation process and ensures that key attributes are considered.
+さらに、RPG マネージャーには、ストーリーテラーが NPC を作成するのを支援するウィザードがあり、重要度の順にプロセスをガイドします。 このツールは作成プロセスを合理化し、主要な属性が確実に考慮されるようにします。
 
-Ultimately, NPCs play a pivotal role in shaping the narrative and interactions within a campaign. Their characteristics, desires, and challenges can drive the plot forward, create conflicts, and enrich the world-building process. Therefore, it is essential for storytellers and GMs to carefully craft their NPCs, considering the impact they will have on the overall narrative and the experiences of the player characters.
+最終的に、NPC はキャンペーン内の物語とインタラクションを形成する上で極めて重要な役割を果たします。 彼らの特性、欲望、課題は、プロットを前進させ、対立を生み出し、世界構築プロセスを豊かにすることができます。 したがって、ストーリーテラーと GM は、物語全体とプレイヤー キャラクターの経験に与える影響を考慮して、NPC を慎重に作成することが不可欠です。
 
-#### 3.3.8. Factions
+#### 3.3.8. 派閥
 
-Factions represent organized groups of non-player characters that share common goals, philosophies, or interests. They play a crucial role in shaping the world of the campaign and often serve as allies, enemies, or sources of intrigue for the player characters.
+派閥は、共通の目標、哲学、または興味を共有するノンプレイヤー キャラクターの組織化されたグループを表します。 彼らはキャンペーンの世界を形作る上で重要な役割を果たし、多くの場合、プレイヤー キャラクターにとって味方、敵、または陰謀の源として機能します。
 
-**Attributes**
+**属性**
 
-- **Description**: A detailed text field describing the faction's history, goals, notable members, and any other relevant information.
-- **Philosophy**: This outlines the beliefs and values that guide the faction's actions and decisions.
-- **Faction Structure**: A text field describing the internal organization of the faction, including its leadership, divisions, and any special roles or titles.
+- **説明**: 派閥の歴史、目標、注目すべきメンバー、その他の関連情報を説明する詳細なテキスト フィールド。
+- **哲学**: これは、派閥の行動と決定の指針となる信念と価値観を概説します。
+- **派閥の構造**: リーダーシップ、部門、特別な役割や役職など、派閥の内部組織を説明するテキスト フィールド。
 
-In RPG Manager, a non-player character's affiliation with a faction is defined through relationships. A non-player character can belong to multiple factions, and a faction can have relationships with other factions or elements, allowing for a complex web of alliances and rivalries.
+RPG Manager では、ノンプレイヤー キャラクターの派閥への所属は、関係を通じて定義されます。 ノンプレイヤー キャラクターは複数の派閥に属することができ、派閥は他の派閥や要素と関係を持つことができるため、同盟と対立の複雑な網が形成されます。
 
-**Notes**
+**ノート**
 
-- A non-player character can belong to multiple factions, which allows for intricate relationships and potential conflicts of interest.
-- Factions can have relationships with other factions or elements, enabling the creation of a network of alliances, rivalries, and other interactions that can add depth and complexity to the campaign.
-- The Philosophy attribute outlines the guiding principles and values of the faction, which can influence its actions, decisions, and relationships with other elements in the campaign.
+- ノンプレイヤー キャラクターは複数の派閥に属することができるため、複雑な関係や利益相反の可能性が考慮されます。
+- 派閥は他の派閥や勢力と関係を持つことができ、同盟、対立、その他の相互作用のネットワークを構築して、キャンペーンに深みと複雑さを加えることができます。
+- 哲学属性は、派閥の行動、決定、およびキャンペーン内の他の要素との関係に影響を与える可能性のある、派閥の指針となる原則と価値観を概説します。
 
-Factions are a vital element in RPG Manager as they influence the actions of non-player characters and can have a significant impact on the campaign's narrative and dynamics. By thoughtfully defining a faction's attributes and relationships, storytellers can create a rich tapestry of interactions that add depth and complexity to their campaign.
+派閥はノンプレイヤー キャラクターの行動に影響を与え、キャンペーンの物語やダイナミクスに大きな影響を与える可能性があるため、RPG マネージャーでは重要な要素です。 ストーリーテラーは、派閥の属性と関係を慎重に定義することで、キャンペーンに深みと複雑さを加える豊富な対話のタペストリーを作成できます。
 
-#### 3.3.9. Objects
+#### 3.3.9. オブジェクト
 
-Objects are items of importance within the campaign. While their role and significance can vary widely depending on the GM's narrative, they are essential tools for enriching the storyline and providing depth to the campaign world.
+オブジェクトはキャンペーン内で重要なアイテムです。 それらの役割と重要性は GM の物語によって大きく異なりますが、ストーリーを豊かにし、キャンペーンの世界に深みを与えるためには不可欠なツールです。
 
-**Attributes**
+**属性**
 
-- **Description**: This is the only attribute of an object. It is a text field where the GM can describe the object, its appearance, its significance, and any other relevant information.
+- **説明**: これはオブジェクトの唯一の属性です。 これは、GM がオブジェクト、その外観、その重要性、およびその他の関連情報を説明できるテキスト フィールドです。
 
-**Notes**
+**ノート**
 
-- Objects can have relationships with any other elements in the campaign, such as locations, events, non-player characters, etc. This flexibility allows the GM to weave objects into the narrative in a way that suits the storyline best.
-- The role and importance of objects can vary significantly from one campaign to another. While some objects might be pivotal to the plot, others might serve a more decorative or atmospheric purpose.
+- オブジェクトは、場所、イベント、ノンプレイヤーキャラクターなど、キャンペーン内の他の要素と関係を持つことができます。この柔軟性により、GM はストーリーラインに最も適した方法でオブジェクトを物語に織り込むことができます。
+- オブジェクトの役割と重要性は、キャンペーンごとに大きく異なる場合があります。 一部のオブジェクトはプロットにとって極めて重要ですが、他のオブジェクトはより装飾的または雰囲気的な目的に役立つ場合があります。
 
-In conclusion, objects, while seemingly simple, are a versatile element that can be employed in various ways to enhance the storytelling and the immersive experience of the RPG.
+結論として、オブジェクトは一見シンプルに見えますが、RPG のストーリーテリングと没入感を高めるためにさまざまな方法で使用できる多用途の要素です。
 
-#### 3.3.10. Monsters
+#### 3.3.10. モンスター
 
-Monsters are creatures that player characters may encounter during their adventures. They can be creatures of myth, products of magic, or beings from another dimension. Regardless of their origin, monsters add an element of danger and unpredictability to the campaign.
+モンスターは、プレイヤーキャラクターが冒険中に遭遇する可能性のある生き物です。 彼らは神話の生き物、魔法の産物、または別の次元から来た存在である可能性があります。 起源に関係なく、モンスターはキャンペーンに危険と予測不能の要素を加えます。
 
-**Attributes**
+**属性**
 
-- **Description**: This is the only attribute of a monster. It is a text field where the GM can describe the monster's appearance, abilities, behaviors, and any other relevant information.
+- **説明**: これはモンスターの唯一の属性です。 これは、GM がモンスターの外観、能力、行動、およびその他の関連情報を説明できるテキスト フィールドです。
 
-**Notes**
+**ノート**
 
-- Similar to objects, monsters can have relationships with any other elements in the campaign, such as locations, events, non-player characters, etc. This interconnectedness allows the GM to integrate monsters into the narrative seamlessly and in a way that enhances the overall storyline.
-- The role and importance of monsters can vary greatly from one campaign to another. Some monsters might be central to the plot, serving as key antagonists or challenges that the player characters must overcome. Others might be more peripheral, serving as obstacles or atmospheric elements that add flavor to the campaign world.
+- オブジェクトと同様に、モンスターは、場所、イベント、ノンプレイヤーキャラクターなど、キャンペーン内の他の要素と関係を持つことができます。この相互接続により、GM はモンスターをシームレスに物語に統合し、全体的なストーリーを強化することができます。 ストーリーライン。
+- モンスターの役割と重要性はキャンペーンごとに大きく異なります。 一部のモンスターはプロットの中心となる場合があり、主要な敵対者として、またはプレイヤー キャラクターが克服しなければならない課題として機能します。 他のものはより周辺的なもので、キャンペーンの世界に風味を加える障害物や雰囲気要素として機能する場合があります。
 
-In summary, monsters, while potentially fearsome, are a crucial element in shaping the narrative and the challenges that player characters face during their adventures.
+要約すると、モンスターは潜在的に恐ろしいものである一方で、物語とプレイヤー キャラクターが冒険中に直面する課題を形作る上で重要な要素です。
 
-#### 3.3.11. Subplots
+#### 3.3.11. サブプロット
 
-Subplots are additional narratives that supplement the main plot of the campaign. While the main plot drives the overarching narrative, subplots add depth, complexity, and richness to the world and its characters. They can vary in scope and scale, and can be generic, affecting the world at large, or specific, tied to a particular non-player character (NPC) or player character (PC).
+サブプロットは、キャンペーンのメイン プロットを補足する追加の物語です。 メイン プロットが全体的な物語を推進する一方、サブプロットは世界とその登場人物に深み、複雑さ、豊かさを加えます。 それらは範囲と規模が異なり、世界全体に影響を与える一般的なもの、または特定のノンプレイヤー キャラクター (NPC) またはプレイヤー キャラクター (PC) に関連付けられた特殊なものもあります。
 
-**Attributes**
+**属性**
 
-- **Description**: A text field to describe the subplot's theme, setting, and narrative. This is the only required attribute.
-- **Story Circle**: A space to develop the subplot's narrative using the story circle method. This helps in structuring the narrative and ensuring it has a logical flow.
+- **説明**: サブプロットのテーマ、設定、物語を説明するテキスト フィールド。 これが唯一の必須属性です。
+- **ストーリー サークル**: ストーリー サークル手法を使用してサブプロットの物語を展開するスペース。 これは、物語を構造化し、論理的な流れを確保するのに役立ちます。
 
-**Notes**:
+**ノート**：
 
-- Subplots are flexible and can be linked to multiple NPCs or PCs, depending on the storyteller's needs.
-- They can also be interconnected with other subplots through relationships, creating a network of narratives that enrich the campaign.
+- サブプロットは柔軟で、ストーリーテラーのニーズに応じて複数の NPC または PC にリンクできます。
+- 関係を通じて他のサブプロットと相互接続することもでき、キャンペーンを豊かにする物語のネットワークを作成します。
 
-Subplots are an essential tool for the storyteller, providing a way to create a multifaceted narrative that engages players on multiple levels. Whether it's a personal journey of an NPC, a side quest that the PCs undertake, or a larger event that affects the world, subplots help in creating a dynamic and immersive storytelling experience.
+サブプロットはストーリーテラーにとって不可欠なツールであり、プレーヤーを複数のレベルで引き込む多面的な物語を作成する方法を提供します。 NPC の個人的な旅、PC が引き受けるサイド クエスト、または世界に影響を与える大規模なイベントのいずれであっても、サブプロットはダイナミックで没入型のストーリーテリング エクスペリエンスを作成するのに役立ちます。
 
-#### 3.3.12. Player characters
+#### 3.3.12. プレイヤーキャラクター
 
-Player characters are the avatars of the players in the game world, serving as a crucial reference for the storyteller. While they are generally created and developed by the players themselves, the RPG Manager provides a space for the storyteller to record key aspects of each player character that are essential for the narrative.
+プレイヤー キャラクターは、ゲーム世界におけるプレイヤーのアバターであり、ストーリーテラーにとって重要な参考資料として機能します。 通常、これらはプレイヤー自身によって作成および開発されますが、RPG マネージャーは、ストーリーテラーが物語に不可欠な各プレイヤー キャラクターの重要な側面を記録するスペースを提供します。
 
-**Attributes**
+**属性**
 
-- **Description**: A text field where you can describe the character's appearance, personality, background, or any other relevant information.
-- **Beliefs**: The core beliefs that drive the character's actions and decisions.
-- **Lie**: A misconception that the character holds about themselves, others, or the world around them.
-- **Need**: What the character truly needs, which may be unknown to them.
-- **Want**: What the character thinks they want, which may not necessarily align with their true needs.
-- **Strengths**: The positive traits of the character that will aid them in their journey.
-- **Weaknesses**: The negative traits of the character that may hinder them or create conflict.
+- **説明**: キャラクターの外観、性格、背景、またはその他の関連情報を説明できるテキスト フィールド。
+- **信念**: キャラクターの行動と決定を動かす中心となる信念。
+- **嘘**: キャラクターが自分自身、他人、または周囲の世界について抱いている誤解。
+- **ニーズ**: キャラクターが本当に必要とするもの。キャラクターには知られていない可能性があります。
+- **Want**: キャラクターが欲しいと思っているもの。これは必ずしもキャラクターの本当のニーズと一致するとは限りません。
+- **強み**: 旅を助けるキャラクターのポジティブな特性。
+- **弱点**: キャラクターの妨げになったり、対立を引き起こしたりする可能性のある、キャラクターの否定的な特性。
 
-Each of the attributes, apart from the description, is optional and can be filled out according to the needs of the storyteller and the player. It is important to note that the RPG Manager is designed to be a tool for the storyteller, and while it provides a space to record these aspects of player characters, it is not a replacement for the character sheets or other tools used by the players themselves.
+説明を除く各属性はオプションであり、ストーリーテラーとプレイヤーのニーズに応じて入力できます。 RPG マネージャーはストーリーテラーのためのツールとして設計されており、プレーヤー キャラクターのこれらの側面を記録するスペースを提供しますが、キャラクター シートやプレーヤー自身が使用する他のツールに代わるものではないことに注意することが重要です。 。
 
-**Notes**
+**ノート**
 
-- The attributes listed above are just a guide, and the storyteller and players may choose to include other information that is relevant to their campaign.
-- Relationships between player characters and other elements in the campaign, such as NPCs, locations, and events, can be recorded and managed through the RPG Manager. This facilitates a comprehensive understanding of the interconnections within the narrative and assists in campaign planning and execution.
+- 上記の属性は単なるガイドであり、ストーリーテラーとプレイヤーはキャンペーンに関連する他の情報を含めることを選択できます。
+- プレーヤー キャラクターと、NPC、場所、イベントなどのキャンペーン内の他の要素との関係は、RPG マネージャーを通じて記録および管理できます。 これにより、物語内の相互関係の包括的な理解を促進し、キャンペーンの計画と実行に役立ちます。
 
-In summary, the player characters section in the RPG Manager serves as a useful reference for the storyteller, allowing them to have a quick overview of the key aspects of each player character and understand their place within the broader narrative.
+要約すると、RPG マネージャーのプレイヤー キャラクター セクションはストーリーテラーにとって有益なリファレンスとして機能し、各プレイヤー キャラクターの重要な側面を簡単に概観し、より広範な物語の中での自分の位置を理解できるようになります。
 
-#### 3.3.13. Sessions
+#### 3.3.13. セッション
 
-You've been there, right? The session is about to start, and you've got some scribbled notes on a napkin, or maybe you've meticulously planned every single detail down to the NPC's favorite type of cheese. Regardless, you know that once the game starts, all your plans could go down the drain because, let's face it, players are chaos incarnate. That's where RPG Manager's `Sessions` feature comes in. Think of it as your digital napkin, only way cooler and less likely to be used to wipe up spilled soda.
+行ったことありますよね？ セッションが始まろうとしているとき、あなたはナプキンに走り書きしたメモを持っているか、あるいは NPC の好きなチーズの種類に至るまで、あらゆる詳細を綿密に計画しているかもしれません。 いずれにせよ、ゲームが始まると、すべての計画が水の泡になる可能性があることはご存知でしょう。率直に言って、プレイヤーは混沌の化身であるためです。 そこで RPG マネージャーの「セッション」機能が登場します。これをデジタル ナプキンと考えてください。はるかにクールで、こぼれたソーダを拭き取るのに使用される可能性は低くなります。
 
-So, why does RPG Manager have sessions? Simple. Sessions are where the rubber meets the road. It's where you, the GM, plot out the session and track what the player characters do during it. Whether you're a Plotter who meticulously plans out the narrative, a Sandboxed who creates an open world with Events, Locations, and Clues, or a Lazy GM who preps just a few notes and bullet points before each session, you're going to need to keep track of what the hell is happening.
+では、なぜ RPG Manager にはセッションがあるのでしょうか? 単純。 セッションはゴムが路面と接する場所です。 ここでは、GM であるあなたがセッションを計画し、セッション中にプレイヤー キャラクターが何をしたかを追跡します。 あなたが綿密に物語を計画するプロッターであっても、イベント、場所、手がかりを備えたオープンワールドを作成するサンドボックス派であっても、各セッションの前にいくつかのメモと箇条書きを準備するだけの怠惰な GM であっても、あなたは次のことを行うことになります。 一体何が起こっているのかを追跡する必要がある。
 
-**Attributes**:
+**属性**:
 
-- **Description**: A brief summary of what went down. Did the player characters burn down the village (again), or did they actually save the day?
-- **Session Date**: When did this madness occur? Keeping track of dates is crucial for managing the timeline of your campaign.
-- **Story Circle**: For the Plotters out there, this is your narrative tool to craft a session with a cohesive structure and captivating arcs.
-- **List of Scenes**: Automatically populated when scenes are created for the session. It helps organize the various encounters or events within the session.
-- **Kishōtenketsu**: A plot tool to structure and develop your narrative using a classic Chinese, Korean and Japanese style.
-- **Conflict**: A tool to describe conflicts that help to drive the narrative. They helps storytellers set up conflicts that are useful to identify unstructured plots to move the story forward.
+- **説明**: 何が起こったかの簡単な概要。 プレイヤーキャラクターたちは（再び）村を焼き払ったのでしょうか、それとも実際に窮地を救ったのでしょうか？
+- **セッション日**: この狂気はいつ起こりましたか? キャンペーンのタイムラインを管理するには、日付を追跡することが重要です。
+- **ストーリー サークル**: プロッターにとって、これは、一貫した構造と魅力的なアークを備えたセッションを作成するための物語ツールです。
+- **シーンのリスト**: セッション用にシーンが作成されると、自動的に入力されます。 セッション内のさまざまな出会いやイベントを整理するのに役立ちます。
+- **起承転結**: 古典的な中国、韓国、日本のスタイルを使用して物語を構築し、展開するためのプロット ツールです。
+- **対立**: 物語を推進するのに役立つ対立を説明するツール。 これらは、ストーリーテラーが矛盾を設定するのに役立ち、ストーリーを前進させるための構造化されていないプロットを特定するのに役立ちます。
 
-Okay, let's address the elephant in the room. Why use the Sessions feature? Well, it's not just a note-taking tool. It’s a way to strategically plan and record the chaos. With it, you can take notes during the session, track player characters' actions, and know how to progress the campaign. And let's not forget the best part; it facilitates the creation of relationships between Sessions and any other element in the game. So, a session can be linked to specific NPCs, locations, events, and other elements, helping you manage the intricate network of relationships and narratives that make up the campaign. It’s like having a super-organized, digital assistant that doesn’t judge you for letting the player characters fight a dragon way above their level.
+さて、部屋の中の象に話しかけましょう。 セッション機能を使用する理由は何ですか? まあ、これは単なるメモを取るツールではありません。 これは戦略的に計画を立て、混乱を記録する方法です。 これを使用すると、セッション中にメモを取り、プレイヤー キャラクターの行動を追跡し、キャンペーンの進行方法を知ることができます。 そして最良の部分を忘れないでください。 これにより、セッションとゲーム内の他の要素との間の関係の作成が容易になります。 そのため、セッションを特定の NPC、場所、イベント、その他の要素にリンクすることができ、キャンペーンを構成する複雑な関係と物語のネットワークを管理するのに役立ちます。 それは、プレイヤーキャラクターに自分のレベルをはるかに超えたドラゴンと戦わせても、あなたを批判しない、非常に組織化されたデジタルアシスタントを持っているようなものです。
 
-In a nutshell, the Sessions feature in RPG Manager is your best friend for session planning and tracking. It's adaptable, it's organized, and most importantly, it's got your back when your players decide to go off the rails... which, let's be honest, is every session.
+一言で言えば、RPG マネージャーのセッション機能は、セッションの計画と追跡に最適です。 適応性があり、組織的であり、そして最も重要なことに、プレイヤーが軌道から外れようと決めたときに背中を押してくれます...正直に言うと、これはすべてのセッションです。
 
-#### 3.3.14. Scenes
+#### 3.3.14. シーン
 
-In the world of tabletop RPGs, a scene is a fundamental unit of gameplay. It represents a specific moment in the game when the player characters are required to perform an active action. This can range from engaging in combat with a fearsome dragon to making a crucial decision that could alter the course of their adventure. The key purpose of a scene is to facilitate active participation and decision-making by the player characters, thereby driving the narrative forward.
+テーブルトップ RPG の世界では、シーンはゲームプレイの基本単位です。 これは、プレイヤー キャラクターがアクティブなアクションを実行する必要があるゲーム内の特定の瞬間を表します。 これは、恐ろしいドラゴンとの戦闘に参加することから、冒険の方向性を変える可能性のある重要な決定を下すことまで多岐にわたります。 シーンの主な目的は、プレイヤー キャラクターの積極的な参加と意思決定を促進し、それによって物語を前進させることです。
 
-**Attributes**
+**属性**
 
-- **Description**: This is a brief outline of what the GM anticipates the player characters will do during the scene. It is crucial to note that this is merely a guideline, as the actions of the player characters may deviate from what is expected. For example, the GM might anticipate that the player characters will engage in combat with a group of bandits, but the players might choose a different approach, such as negotiation or stealth.
-- **Story Circle Stage**: If the session has a story circle, this attribute will indicate at which stage of the story circle the scene should occur (you, need, go, search, find, take, return, change).
-- **Type**: This is the type of action expected during the scene. It can be one of the following: Action, Combat, Decision, Encounter, Exposition, Investigation, Preparation, Recap, Social Combat. It is important to select the most appropriate type for the scene as it sets the tone and expectation for the player characters.
-- **Date**: This is the in-game date when the scene is expected to occur. This helps maintain the consistency of the game world's timeline.
-- **Is Exciting**: This attribute indicates whether the scene includes external elements, such as non-player characters, natural disasters, traps, etc., that trigger an exciting moment.
+- **説明**: これは、シーン中にプレイヤー キャラクターが行うことを GM が予想する内容の簡単な概要です。 プレイヤー キャラクターの動作が予想とは異なる可能性があるため、これは単なるガイドラインであることに注意することが重要です。 たとえば、GM はプレイヤー キャラクターが盗賊のグループと戦闘に参加することを予想するかもしれませんが、プレイヤーは交渉やステルスなどの別のアプローチを選択する可能性があります。
+- **ストーリー サークル ステージ**: セッションにストーリー サークルがある場合、この属性は、ストーリー サークルのどのステージでシーンが発生するかを示します (あなた、必要、行く、検索、見つける、取得、戻る、変更)。
+- **タイプ**: これは、シーン中に予期されるアクションのタイプです。 次のいずれかになります: アクション、戦闘、決定、遭遇、説明、調査、準備、総括、社会的戦闘。 プレイヤー キャラクターのトーンと期待を決定するため、シーンに最適なタイプを選択することが重要です。
+- **日付**: これは、シーンが発生すると予想されるゲーム内の日付です。 これは、ゲーム世界のタイムラインの一貫性を維持するのに役立ちます。
+- **Is Exciting**: この属性は、シーンにエキサイティングな瞬間を引き起こすノンプレイヤー キャラクター、自然災害、罠などの外部要素が含まれているかどうかを示します。
 
-Scenes are an essential tool for the GM, as they help structure the session and provide a roadmap for the narrative. However, it is important to remember that scenes are not set in stone and may evolve organically based on the decisions and actions of the player characters. The key is to facilitate active engagement and participation from the players, thereby creating a dynamic and memorable gaming experience.
+シーンはセッションを構造化し、物語のロードマップを提供するのに役立つため、GM にとって不可欠なツールです。 ただし、シーンは固定されたものではなく、プレイヤー キャラクターの決定や行動に基づいて有機的に進化する可能性があることを覚えておくことが重要です。 重要なのは、プレイヤーの積極的な関与と参加を促進し、それによってダイナミックで思い出に残るゲーム体験を生み出すことです。
 
-### 3.4. Custom Attributes
+### 3.4. カスタム属性
 
-Custom Attributes in RPG Manager are user-defined fields that you can create to add specific details to various elements of your game that are not covered by the default attributes. For example, if you are running a campaign with a magic system that involves "Mana Points," which is not a default attribute in RPG Manager, you can create a custom attribute for it. Custom Attributes provide a way to customize and extend the RPG Manager to better suit the specific needs of your game, helping you to create a more immersive and detailed world for your players based on your specific needs.
+RPG Manager のカスタム属性は、デフォルト属性ではカバーされないゲームのさまざまな要素に特定の詳細を追加するために作成できるユーザー定義フィールドです。 たとえば、RPG Manager のデフォルト属性ではない「マナ ポイント」を含むマジック システムを使用したキャンペーンを実行している場合、そのカスタム属性を作成できます。 カスタム属性は、ゲームの特定のニーズに合わせて RPG マネージャーをカスタマイズおよび拡張する方法を提供し、特定のニーズに基づいてプレーヤーのためにより没入型で詳細な世界を作成するのに役立ちます。
 
-Custom Attributes can be associated with various elements. This means you can create an attribute like "Political Affiliation" for non-player characters, "Weather" for scenes, or "Morale" for player characters, making your game world more detailed and tailored to your narrative.
+カスタム属性はさまざまな要素に関連付けることができます。 これは、ノンプレイヤー キャラクターの「所属政党」、シーンの「天気」、プレイヤー キャラクターの「士気」などの属性を作成して、ゲーム世界をより詳細に、物語に合わせて調整できることを意味します。
 
-The type of data a custom attribute can hold includes Text, Number, Option (a dropdown list of predefined options), Checkbox, Long Text, and Date. This wide range of data types allows you to create attributes that can hold different kinds of information, making your game management more flexible and detailed.
+カスタム属性が保持できるデータのタイプには、テキスト、数値、オプション (事前定義されたオプションのドロップダウン リスト)、チェックボックス、長いテキスト、および日付が含まれます。 この幅広いデータ型により、さまざまな種類の情報を保持できる属性を作成できるため、ゲーム管理がより柔軟かつ詳細になります。
 
-You can access this feature through the options menu by clicking on the "Custom Attributes" link. This will open a Modal form where you can define your own attributes. Each custom attribute must have a name, a type (e.g., Text, Number, Option, Checkbox, Long Text, Date), and, if the type is 'Option,' a list of options that will appear in a dropdown menu. Additionally, you need to specify which element type(s) the custom attribute should be associated with.
+[カスタム属性] リンクをクリックして、オプション メニューからこの機能にアクセスできます。 これにより、独自の属性を定義できるモーダル フォームが開きます。 各カスタム属性には、名前、タイプ (テキスト、数値、オプション、チェックボックス、長いテキスト、日付など)、およびタイプが「オプション」の場合はドロップダウン メニューに表示されるオプションのリストが必要です。 さらに、カスタム属性を関連付ける必要がある要素タイプを指定する必要があります。
 
-Creating Custom Attributes allows you to add specific details to the elements of your game that are not covered by the default attributes provided by RPG Manager. This gives you the flexibility to customize your game according to your needs and preferences, making your storytelling more detailed and engaging.
+カスタム属性を作成すると、RPG Manager が提供するデフォルト属性ではカバーされない特定の詳細をゲームの要素に追加できます。 これにより、ニーズや好みに応じてゲームを柔軟にカスタマイズできるようになり、ストーリーテリングがより詳細で魅力的なものになります。
 
-### 3.5. Tasks
+### 3.5. タスク
 
-Tasks are essentially a to-do list for each element in your RPG Manager. Whether it's a non-player character, a scene, a session, or any other element, you can assign a list of tasks to it. These tasks represent things that need to be done or accomplished within the context of that element. For example, a task for a non-player character could be "Player characters should discover their secret." If you think this task could be discovered in a scene or a session, you can assign it to those specific elements as well. This helps maintain consistency throughout your campaign and ensures that important plot points or character developments are not overlooked.
+タスクは基本的に、RPG マネージャーの各要素の To-Do リストです。 ノンプレイヤー キャラクター、シーン、セッション、その他の要素のいずれであっても、タスクのリストを割り当てることができます。 これらのタスクは、その要素のコンテキスト内で実行または達成する必要があることを表します。 たとえば、ノンプレイヤー キャラクターに対するタスクは、「プレイヤー キャラクターは自分の秘密を発見する必要がある」とすることができます。 このタスクがシーンまたはセッションで見つかる可能性があると思われる場合は、そのタスクをそれらの特定の要素に割り当てることもできます。 これにより、キャンペーン全体の一貫性が維持され、重要なプロット ポイントやキャラクターの展開が見落とされることがなくなります。
 
-**Creating a Task**
-Creating a task is straightforward. When you are in the context of a specific element, you can add a task to it. This means you can't create a task independently; it has to be associated with an element right from the start. Each task can be assigned to one or more elements, making it a versatile tool to keep track of important objectives or plot developments across different parts of your campaign.
+**タスクの作成**
+タスクの作成は簡単です。 特定の要素のコンテキストにいる場合、その要素にタスクを追加できます。 つまり、タスクを独立して作成することはできません。 最初から要素に関連付けられている必要があります。 各タスクは 1 つ以上の要素に割り当てることができるため、重要な目標を追跡したり、キャンペーンのさまざまな部分の展開をプロットしたりするための多用途ツールになります。
 
-**Tracking Progress**
-RPG Manager allows you to easily track the progress of each task. You can view all the open tasks for a particular campaign, and in each element, you can see all the tasks that have already been completed. This helps you stay organized and ensures that you don't lose track of important objectives as your campaign progresses.
+**進捗状況の追跡**
+RPG マネージャーを使用すると、各タスクの進行状況を簡単に追跡できます。 特定のキャンペーンのすべての未解決タスクを表示でき、各要素で、すでに完了したすべてのタスクを確認できます。 これにより、整理整頓が容易になり、キャンペーンの進行中に重要な目標を見失うことがなくなります。
 
-**Editing and Deleting Tasks**
-Tasks can be edited or deleted after they have been created and assigned. This provides flexibility in case you need to make changes or adjustments as your campaign develops.
+**タスクの編集と削除**
+タスクは、作成して割り当てた後に編集または削除できます。 これにより、キャンペーンの展開に応じて変更や調整が必要になった場合に柔軟に対応できます。
 
-**Limitations**
-There is no limit to the number of tasks that can be created or assigned to an element. This means you can create as many tasks as you need to fully flesh out your campaign and ensure that all important objectives are accounted for.
+**制限事項**
+要素に作成または割り当てることができるタスクの数に制限はありません。 これは、キャンペーンを完全に具体化し、すべての重要な目標を確実に達成するために必要な数のタスクを作成できることを意味します。
 
-Overall, tasks are a powerful tool in RPG Manager that helps you stay organized and ensure that important plot points, character developments, and objectives are not overlooked throughout your campaign.
+全体として、タスクは RPG マネージャーの強力なツールであり、組織化を維持し、キャンペーン全体を通じて重要なプロット ポイント、キャラクターの育成、目標を見落とさないようにするのに役立ちます。
 
-### 3.6. Element Templates
+### 3.6. 要素テンプレート
 
-In RPG Manager, an element template is an Obsidian note that contains a special code block, `RpgManager4`, which is used by the application to render its user interface (UI). This allows Storytellers/GMs to customize their notes by adding any information, text, or other code blocks they need, while still having the RPG Manager UI integrated into the note.
+RPG マネージャーでは、要素テンプレートは特別なコード ブロック「RpgManager4」を含む Obsidian ノートであり、アプリケーションがユーザー インターフェイス (UI) をレンダリングするために使用します。 これにより、ストーリーテラー/GM は、RPG マネージャー UI をノートに統合しながら、必要な情報、テキスト、またはその他のコード ブロックを追加してノートをカスタマイズできます。
 
-Creating a template is a two-step process:
+テンプレートの作成は 2 段階のプロセスです。
 
-1. **Define the Template Location:** In the RPG Manager settings, specify the folder where your templates are stored. This is where RPG Manager will look for your templates.
+1. **テンプレートの場所を定義します:** RPG マネージャー設定で、テンプレートが保存されているフォルダーを指定します。 RPG Manager はここでテンプレートを探します。
 
-2. **Create the Template:** A template is an Obsidian note that contains the \`\`\`RpgManager4\`\`\` code block where you want the RPG Manager UI to appear. You can add any other content you want to the note, but it can only contain one \`\`\`RpgManager4\`\`\` code block.
+2. **テンプレートの作成:** テンプレートは、RPG マネージャー UI を表示する \`\`\`RpgManager4\`\`\` コード ブロックを含む Obsidian ノートです。 他のコンテンツをメモに追加できますが、\`\`\`RpgManager4\`\`\` コード ブロックを 1 つだけ含めることができます。
 
-### 3.7. Global Assets
+### 3.7. グローバル資産
 
-In version 4 you can create elements that are not part of a single campaing. These assets (events, locations, clues, non-player characters, factions, objects, monsters, subplots and player-characters) can be used in anyone of your campaigns. Just add a relationship and you are good to go, writing once, reusing many times!
+バージョン 4 では、単一のキャンペーンの一部ではない要素を作成できます。 これらのアセット (イベント、場所、手がかり、ノンプレイヤー キャラクター、派閥、オブジェクト、モンスター、サブプロット、プレイヤー キャラクター) は、どのキャンペーンでも使用できます。 関係を追加するだけで準備完了です。一度書いたら何度も再利用できます。
 
-## 4. Creating a World
+## 4. 世界を創る
 
-Creating a world is more than just outlining a plot; it’s about constructing a living, breathing environment in which your story can unfold. The RPG Manager facilitates this by allowing you to create and interrelate various elements that are crucial for worldbuilding.
+世界を作成するということは、単にプロットの概要を説明するだけではありません。 それはあなたの物語が展開できる生き生きとした環境を構築することです。 RPG マネージャーを使用すると、世界構築に重要なさまざまな要素を作成して相互に関連付けることができるため、これが容易になります。
 
-**Interconnectedness**: By creating relationships between different elements - for example, linking an NPC to a faction or a location to an event - you're essentially constructing the fabric of your world. This interconnectedness helps to create a dynamic, coherent setting in which each element influences others. For instance, an NPC's actions might be influenced by their affiliation to a faction, which in turn might be in conflict with another faction over control of a specific location.
+**相互接続性**: さまざまな要素間の関係を作成することにより (たとえば、NPC を派閥にリンクしたり、場所をイベントにリンクしたり)、本質的に世界の構造を構築することになります。 この相互接続により、各要素が他の要素に影響を与える、動的で一貫した設定が作成されます。 たとえば、NPC の行動は派閥への所属によって影響を受ける可能性があり、その結果、特定の場所の制御をめぐって別の派閥と競合する可能性があります。
 
-**Consistency**: As your world grows, it can be challenging to keep track of all the details. The RPG Manager helps maintain consistency by providing a structured way to organize and relate various elements. For example, by linking a subplot to a specific NPC or player character, you can easily track how that subplot progresses as the character interacts with other elements in the world.
+**一貫性**: 世界が成長するにつれて、すべての詳細を追跡することが困難になる場合があります。 RPG マネージャーは、さまざまな要素を整理して関連付けるための構造化された方法を提供することで、一貫性を維持するのに役立ちます。 たとえば、サブプロットを特定の NPC またはプレイヤー キャラクターにリンクすると、キャラクターが世界の他の要素と相互作用するときにサブプロットがどのように進行するかを簡単に追跡できます。
 
-**Depth**: Creating relationships between elements also adds depth to your world. For example, a location is not just a physical place; it's also a setting for events, a home for NPCs, and perhaps a base for a faction. By establishing these relationships, you give the location a history and a purpose that can enrich your narrative.
+**奥行き**: 要素間の関係を作成すると、世界に奥行きも加わります。 たとえば、場所は単なる物理的な場所ではありません。 イベントの舞台でもあり、NPC の本拠地でもあり、おそらくは派閥の拠点でもあります。 こうした関係を確立することで、その場所に歴史と目的を与え、物語を豊かにすることができます。
 
-**Dynamics**: Relationships between elements also create dynamics that can drive your narrative. For example, the relationship between an NPC and a faction might change over time, influencing the NPC's actions and decisions. These dynamics can create unexpected twists and turns in your story, keeping your players engaged.
+**ダイナミクス**: 要素間の関係によっても、物語を推進するダイナミクスが生まれます。 たとえば、NPC と派閥の関係は時間の経過とともに変化し、NPC の行動や決定に影響を与える可能性があります。 こうしたダイナミクスにより、ストーリーに予期せぬ展開が生まれ、プレイヤーの関心を引きつけることができます。
 
-### 4.1. What Type of Storyteller Are You?
+### 4.1. あなたはどんなタイプのストーリーテラーですか?
 
-Understanding your style as a storyteller is crucial for effectively using the RPG Manager. Generally, storytellers can be categorized into three main types:
+RPG マネージャーを効果的に使用するには、ストーリーテラーとしての自分のスタイルを理解することが重要です。 一般に、ストーリーテラーは 3 つの主なタイプに分類できます。
 
-1. **Plotters**: These are storytellers who like to plan their stories in detail. They create intricate plots with well-defined story arcs, character development, and a clear beginning, middle, and end. They often use tools like the story circle to craft compelling narratives.
+1. **プロッター**: ストーリーを詳細に計画することを好むストーリーテラーです。 彼らは、明確に定義されたストーリーアーク、キャラクター開発、明確な始まり、中間、終わりを備えた複雑なプロットを作成します。 彼らは多くの場合、ストーリー サークルなどのツールを使用して、魅力的な物語を作り上げます。
 
-   _Example_: If you enjoy creating detailed outlines for each session, developing extensive backstories for your NPCs, and knowing exactly how each subplot will unfold, you are probably a plotter.
+    _例_: 各セッションの詳細なアウトラインを作成したり、NPC の広範なバックストーリーを作成したり、各サブプロットがどのように展開するかを正確に知ったりするのが好きなら、あなたはおそらくプロッターです。
 
-   _How RPG Manager Helps_: The RPG Manager is designed to help plotters organize their thoughts and ideas, create detailed relationships between elements, and develop compelling story arcs.
+    _RPG マネージャーの使い方_: RPG マネージャーは、プロッターが考えやアイデアを整理し、要素間の詳細な関係を作成し、魅力的なストーリー アークを開発できるように設計されています。
 
-2. **Sandboxers**: These are storytellers who prefer to create open worlds where the players can explore and create their own stories. They focus on creating a detailed setting with various events, locations, and clues that the players can interact with.
+2. **サンドボクサー**: プレイヤーが探索して独自のストーリーを作成できるオープンワールドを作成することを好むストーリーテラーです。 彼らは、プレイヤーが対話できるさまざまなイベント、場所、手がかりを含む詳細な設定を作成することに重点を置いています。
 
-   _Example_: If you prefer to create a detailed world with various locations, events, and NPCs, but leave it up to the players to decide how they want to interact with these elements, you are probably a sandboxer.
+    _例_: さまざまな場所、イベント、NPC を備えた詳細な世界を作成したいが、これらの要素とどのように対話するかはプレイヤーの判断に任せている場合、あなたはおそらくサンドボックス派です。
 
-   _How RPG Manager Helps_: The RPG Manager helps sandboxers by providing a structured way to organize and interrelate various elements of their world, making it easier to manage the open-world setting.
+    _RPG マネージャーの使い方_: RPG マネージャーは、世界のさまざまな要素を整理して相互に関連付ける構造化された方法を提供することで、サンドボックスユーザーを支援し、オープンワールド設定の管理を容易にします。
 
-3. **Lazy GMs**: These are storytellers who prefer to do minimal preparation before each session. They often have a rough idea of how the session will unfold but prefer to improvise and adapt to the players' actions during the game.
+3. **怠惰な GM**: 各セッションの前に最小限の準備をすることを好むストーリーテラーです。 彼らは多くの場合、セッションがどのように展開するかについて大まかなアイデアを持っていますが、ゲーム中に即興でプレイヤーの行動に適応することを好みます。
 
-   _Example_: If you prefer to do minimal preparation before each session, often jotting down just a few bullet points or key ideas, you are probably a lazy GM.
+    _例_: 各セッションの前に最小限の準備を行い、いくつかの箇条書きや重要なアイデアを書き留めることを好む場合は、おそらく怠け者の GM です。
 
-   _How RPG Manager Helps_: The RPG Manager helps lazy GMs by providing a way to quickly and easily create and organize the essential elements needed for each session, making it easier to improvise during the game.
+    _RPG マネージャーの使い方_: RPG マネージャーは、各セッションに必要な要素を迅速かつ簡単に作成および整理する方法を提供することで、怠惰な GM を支援し、ゲーム中の即興演奏を容易にします。
 
-No matter what type of storyteller you are, the RPG Manager is designed to help you create and manage your world with ease.
+あなたがどのようなタイプのストーリーテラーであっても、RPG マネージャーは、世界を簡単に作成および管理できるように設計されています。
 
-### 4.2. For Every Storyteller You Are
+### 4.2. あなたというすべてのストーリーテラーのために
 
-Whether you're a Plotter, a Sandboxed, or a Lazy GM, RPG Manager has something for everyone. This section will help you understand how to use the tool, no matter what your storytelling style is.
+プロッター、サンドボックス、または怠惰な GM のいずれであっても、RPG Manager は誰にとっても何かを提供します。 このセクションは、ストーリーテリングのスタイルに関係なく、ツールの使用方法を理解するのに役立ちます。
 
-#### 4.2.1. Creating Rounded Non-Player Characters
+#### 4.2.1. 丸みを帯びたノンプレイヤーキャラクターの作成
 
-Non-Player Characters (NPCs) are the lifeblood of your world. They are the ones your players interact with, the ones who give out quests, the ones who stand in their way, and the ones who help them on their journey. Creating rounded NPCs is essential to build a three-dimensional world that feels alive and immersive.
+ノンプレイヤーキャラクター (NPC) はあなたの世界の生命線です。 彼らはプレイヤーが対話する人であり、クエストを与える人であり、彼らの邪魔をする人であり、彼らの旅を助ける人です。 丸みを帯びた NPC の作成は、生き生きとした没入感のある 3 次元の世界を構築するために不可欠です。
 
-A rounded NPC is not just a collection of stats and attributes; they have their own desires, fears, and motivations. They have a past that influences their present actions and a future they aspire to. These NPCs are not just passive elements waiting for the player characters (PCs) to interact with them; they have their own goals and can take actions independently of the PCs.
+丸みを帯びた NPC は、単なる統計と属性のコレクションではありません。 彼らには独自の欲望、恐れ、動機があります。 彼らには、現在の行動に影響を与える過去と、望んでいる未来があります。 これらの NPC は、プレイヤー キャラクター (PC) との対話を待つだけの受動的な要素ではありません。 彼らは独自の目標を持っており、PC から独立して行動を起こすことができます。
 
-RPG Manager helps you create rounded NPCs by guiding you through the process of defining their personality, goals, and relationships with other elements of the campaign. This ensures that your NPCs are not just cardboard cutouts but feel like real, living beings that contribute to the richness of your world.
+RPG マネージャーは、NPC の性格、目標、キャンペーンの他の要素との関係を定義するプロセスをガイドすることで、丸みを帯びた NPC を作成するのに役立ちます。 これにより、NPC が単なる段ボールの切り抜きではなく、世界の豊かさに貢献する本物の生き物のように感じられるようになります。
 
-Do not be daunted by the many attributes available in RPG Manager; you can use as many or as few as you wish. The tool is designed to be flexible and adapt to your style of storytelling.
+RPG Manager で使用できる多数の属性に気後れする必要はありません。 必要な数だけ使用することも、少なく使用することもできます。 このツールは、柔軟にストーリーテリングのスタイルに適応できるように設計されています。
 
-By creating rounded NPCs, you not only enhance the realism and depth of your world, but you also create opportunities for more engaging and dynamic storytelling. These NPCs can drive the plot forward, create conflicts and resolutions, and provide a deeper emotional connection for your players.
+丸みを帯びた NPC を作成すると、世界のリアリズムと深みが増すだけでなく、より魅力的でダイナミックなストーリーテリングの機会も生まれます。 これらの NPC はプロットを前進させ、対立と解決を生み出し、プレイヤーに深い感情的なつながりを提供します。
 
-#### 4.2.2. Developing Adventures and Chapters
+#### 4.2.2. 冒険と章の開発
 
-Adventures and Chapters are the building blocks of your campaign. An adventure is a single, self-contained storyline that can be part of a larger campaign, while a chapter is a smaller section of an adventure, or a standalone mini-adventure in its own right.
+アドベンチャーとチャプターはキャンペーンの構成要素です。 アドベンチャーは、より大きなキャンペーンの一部となることができる単一の自己完結型のストーリーラインですが、チャプターはアドベンチャーの小さなセクション、またはそれ自体が独立したミニアドベンチャーです。
 
-Developing well-structured adventures and chapters is crucial for maintaining a logical and engaging narrative.
+論理的で魅力的な物語を維持するには、適切に構造化された冒険と章を作成することが重要です。
 
-- **Adventures**: An adventure is a series of events and challenges that the player characters (PCs) must navigate. It usually has a clear beginning, middle, and end, with a defined goal or objective that the PCs are trying to achieve. Each adventure is composed of multiple chapters, events, and encounters that the PCs will experience as they progress towards their goal.
+- **アドベンチャー**: アドベンチャーとは、プレイヤー キャラクター (PC) がナビゲートしなければならない一連のイベントと課題です。 通常、これには明確な始まり、中間、終わりがあり、PC が達成しようとしている明確な目標または目的があります。 各冒険は、PC が目標に向かって進むにつれて経験する複数の章、イベント、遭遇で構成されます。
 
-- **Chapters**: A chapter is a smaller, more focused section of an adventure. It could be a single encounter, a series of related events, or a specific location that the PCs must navigate. Chapters help to break down the adventure into manageable chunks, making it easier for the storyteller to plan and execute.
+- **チャプター**: チャプターは、冒険のより小さく、より焦点を絞ったセクションです。 それは、1 回の遭遇、一連の関連イベント、または PC が移動しなければならない特定の場所である可能性があります。 章は、冒険を扱いやすい単位に分割するのに役立ち、ストーリーテラーが計画と実行を容易にします。
 
-The key to developing engaging adventures and chapters is to create a logical flow of events that guide the PCs from one challenge to the next, while also allowing room for unexpected twists and turns. It is important to strike a balance between guiding the PCs along a predetermined path and allowing them the freedom to make their own decisions and explore the world at their own pace.
+魅力的な冒険や章を開発するための鍵は、PC を 1 つの挑戦から次の挑戦へと導く論理的なイベントの流れを作成すると同時に、予期せぬ展開の余地を与えることです。 PC を所定のパスに沿って誘導することと、PC が独自の決定を下して自分のペースで世界を探索する自由を許可することとの間のバランスをとることが重要です。
 
-RPG Manager helps you develop well-structured adventures and chapters by providing a framework to organize your ideas and create a logical flow of events. You can define the relationships between different elements of your campaign, such as how an event in one chapter might trigger a reaction in another, or how a decision made by the PCs in one adventure might have consequences in the next.
+RPG マネージャーは、アイデアを整理し、イベントの論理的な流れを作成するためのフレームワークを提供することで、適切に構造化されたアドベンチャーや章を開発するのに役立ちます。 キャンペーンのさまざまな要素間の関係を定義できます。たとえば、ある章のイベントが別の章でどのように反応を引き起こすか、ある冒険で PC が下した決定が次の冒険でどのような影響を与えるかなどです。
 
-### 4.3. For Plotters
+### 4.3. プロッタ用
 
-If you are a Plotter, you enjoy creating detailed plans and well-structured narratives for your gaming sessions. You find satisfaction in developing intricate storylines, with carefully thought-out plots, subplots, and character arcs. You appreciate the value of a well-crafted narrative and believe that a good story is the foundation of an engaging gaming experience.
+あなたがプロッターであれば、ゲーム セッション用の詳細な計画やよく構成された物語を作成することが好きです。 注意深く考え抜かれたプロット、サブプロット、キャラクターアークを使用して、複雑なストーリーを展開することに満足感を感じます。 あなたは、よく練られた物語の価値を高く評価しており、優れたストーリーが魅力的なゲーム体験の基礎であると信じています。
 
-RPG Manager is designed with you in mind. It provides the tools and structure necessary to organize your ideas, develop your narrative, and plan your sessions in detail. From creating well-rounded non-player characters to developing intricate subplots, RPG Manager provides a comprehensive platform to manage all aspects of your campaign.
+RPG Manager はユーザーを念頭に置いて設計されています。 アイデアを整理し、物語を展開し、セッションを詳細に計画するために必要なツールと構造を提供します。 バランスのとれたノンプレイヤー キャラクターの作成から複雑なサブプロットの開発まで、RPG Manager はキャンペーンのあらゆる側面を管理するための包括的なプラットフォームを提供します。
 
-As a Plotter, you will find that RPG Manager streamlines your planning process, making it easier to keep track of all the moving parts of your campaign and ensuring that you are well-prepared for each gaming session.
+プロッターとして、RPG Manager が計画プロセスを合理化し、キャンペーンのすべての変動部分を簡単に追跡し、各ゲーム セッションに向けて十分な準備ができていることがわかります。
 
-#### 4.3.1. Using the Story Circle
+#### 4.3.1. ストーリーサークルの使用
 
-For Plotters who love crafting well-structured narratives, the Story Circle is a particularly useful tool. It's a framework adapted from Dan Harmon's approach to storytelling, designed to create a satisfying, complete story. The Story Circle consists of eight stages: You, Need, Go, Search, Find, Take, Return, and Change.
-With RPG Manager, you can implement the Story Circle at various levels of granularity:
+しっかりと構造化された物語を作成するのが好きなプロッターにとって、ストーリー サークルは特に便利なツールです。 これは、ダン ハーモンのストーリーテリングへのアプローチを応用したフレームワークで、満足のいく完全なストーリーを作成するように設計されています。 ストーリーサークルは、You、Need、Go、Search、Find、Take、Return、Change の 8 つのステージで構成されます。
+RPG マネージャーを使用すると、さまざまな粒度レベルでストーリー サークルを実装できます。
 
-- **Campaigns**: At the campaign level, the Story Circle can help you outline the overarching narrative of your campaign, providing a high-level view of major milestones, turning points, and character arcs.
+- **キャンペーン**: キャンペーン レベルでは、ストーリー サークルはキャンペーンの全体的な物語の概要を説明するのに役立ち、主要なマイルストーン、転換点、キャラクター アークの概要を提供します。
 
-- **Adventures**: For each adventure within the campaign, you can apply the Story Circle to create a well-rounded, self-contained narrative arc. This ensures that each adventure contributes meaningfully to the campaign while standing as an engaging story in its own right.
+- **アドベンチャー**: キャンペーン内の各アドベンチャーに対して、ストーリー サークルを適用して、バランスのとれた自己完結型の物語の弧を作成できます。 これにより、それぞれの冒険がそれ自体で魅力的なストーリーとして存在しながら、キャンペーンに有意義に貢献することが保証されます。
 
-- **Chapters**: If you break your adventures into chapters, the Story Circle can help you maintain a sense of pacing and dramatic tension throughout each adventure. It's a way of ensuring that every chapter moves the story forward and contributes to the characters' development.
+- **章**: 冒険を章に分割すると、ストーリー サークルを使用すると、各冒険を通してペース感と劇的な緊張感を維持することができます。 これは、各章がストーリーを確実に前進させ、キャラクターの成長に貢献するための方法です。
 
-- **Sessions**: Even on a session-by-session basis, the Story Circle can provide valuable structure. As a Plotter, you can use it to sketch out the expected flow of a single gaming session, planning moments of tension, discovery, conflict, and resolution that will keep your players engaged.
+- **セッション**: セッションごとであっても、ストーリー サークルは価値のある構造を提供できます。 プロッターとしてこれを使用すると、単一のゲーム セッションで予想される流れを概略的に示し、緊張、発見、対立、解決の瞬間を計画して、プレイヤーの関心を維持することができます。
 
-So, whether you're crafting the grand tale of a world-saving quest or planning out a single session's escapade, the Story Circle offers a valuable framework for developing compelling narratives. RPG Manager's functionality allows you to incorporate this directly into your planning, making it an indispensable tool for the Plotter GM.
+したがって、世界を救う冒険の壮大な物語を作成している場合でも、単一セッションの冒険を計画している場合でも、ストーリー サークルは、魅力的な物語を開発するための貴重なフレームワークを提供します。 RPG マネージャーの機能を使用すると、これを計画に直接組み込むことができるため、プロッター GM にとって不可欠なツールになります。
 
-### 4.4. For Sandboxers
+### 4.4. サンドボクサー向け
 
-Sandboxers thrive on flexibility and improvisation. They create an open world, filled with events, locations, and clues, and then set their players loose to explore and interact with that world as they see fit. The narrative emerges organically from the players' choices and actions.
+サンドボクサーは柔軟性と即興性を重視します。 イベント、場所、手がかりで満たされたオープンワールドを作成し、プレイヤーを自由に解放して、必要に応じてその世界を探索し、対話します。 プレイヤーの選択と行動から物語が有機的に生まれます。
 
-With RPG Manager, Sandboxers can create a detailed and immersive world for their players. The players' choices and actions will determine the course of the narrative, making for a dynamic and engaging gaming experience.
+RPG マネージャーを使用すると、サンドボックスユーザーはプレーヤーのために詳細で没入型の世界を作成できます。 プレイヤーの選択と行動が物語の方向性を決定し、ダイナミックで魅力的なゲーム体験を実現します。
 
-So, if you're a Sandboxer who loves creating detailed, open worlds for your players to explore, RPG Manager offers the tools and flexibility you need to craft your narrative.
+したがって、プレイヤーが探索できる詳細なオープンワールドを作成するのが好きなサンドボックスユーザーであれば、RPG Manager は物語を作成するために必要なツールと柔軟性を提供します。
 
-#### 4.4.1. Creating Open Worlds
+#### 4.4.1. オープンワールドの作成
 
-Creating an open world involves much more than just sketching out a map with a few cities and points of interest. It's about creating a dynamic and interactive environment that your players can explore and affect through their actions. With RPG Manager, the process of creating such a world is simplified, but still offers the depth and complexity that your world deserves.
+オープンワールドの作成には、単にいくつかの都市と名所を含む地図をスケッチするだけでは不十分です。 プレイヤーがアクションを通じて探索し、影響を与えることができる、ダイナミックでインタラクティブな環境を作成することが重要です。 RPG Manager を使用すると、このような世界を作成するプロセスが簡素化されますが、それでも、世界にふさわしい深みと複雑さを提供します。
 
-- **Integrating Elements**: Use the different elements in RPG Manager, like locations, events, clues, non-player characters, factions, and objects, to create a world full of life and intrigue. Each of these elements will help you to create a world that is rich in detail and full of possibilities.
+- **要素の統合**: RPG マネージャーのさまざまな要素 (場所、イベント、手がかり、ノンプレイヤー キャラクター、派閥、オブジェクトなど) を使用して、活気と陰謀に満ちた世界を作成します。 これらの各要素は、詳細が豊富で可能性に満ちた世界を作成するのに役立ちます。
 
-- **Relationships**: Define the relationships between the different elements in your world. This could be the relationship between two non-player characters, between a faction and a location, or between a clue and an event. By defining these relationships, you create a network of interconnected elements that make your world feel cohesive and real.
+- **関係**: 世界のさまざまな要素間の関係を定義します。 これは、2 人のノンプレイヤー キャラクター間の関係、派閥と場所の関係、または手がかりとイベントの関係である可能性があります。 これらの関係を定義することで、相互に接続された要素のネットワークを作成し、世界に一貫性と現実感を与えます。
 
-- **Reactivity**: Your world should react to the actions of the player characters. RPG Manager helps you to keep track of the decisions that your players make and the consequences of those decisions. This will help you to create a world that feels dynamic and responsive.
+- **反応性**: あなたの世界はプレイヤー キャラクターのアクションに反応する必要があります。 RPG マネージャーは、プレイヤーが行う決定とその決定の結果を追跡するのに役立ちます。 これは、ダイナミックで応答性の高い世界を作成するのに役立ちます。
 
-Remember, creating an open world is not just about creating a large space for your players to explore, but about creating a world that feels alive and interconnected. With RPG Manager, you have all the tools you need to create such a world.
+オープンワールドの作成とは、単にプレイヤーが探索できる広いスペースを作成することではなく、生き生きと相互接続されていると感じられる世界を作成することであることを忘れないでください。 RPG Manager を使用すると、そのような世界を作成するために必要なツールがすべて揃っています。
 
-#### 4.4.2. Developing Events, Locations, and Clues
+#### 4.4.2. イベント、場所、手がかりの開発
 
-RPG Manager is your trusted companion in this creative endeavor. It enables you to populate your world with various elements, all interconnected and ripe for exploration:
+RPG Manager は、このクリエイティブな取り組みにおける信頼できる相棒です。 これにより、さまざまな要素を世界に配置することができ、すべて相互に接続されており、探索するのに適しています。
 
-- **Events**: Define significant happenings that populate your world. These can be historical events that shaped the world, ongoing conflicts that create tension, or potential future events that the players can influence.
+- **イベント**: あなたの世界に存在する重要な出来事を定義します。 これらは、世界を形作った歴史的な出来事、緊張を生み出す進行中の紛争、またはプレイヤーが影響を与える可能性のある将来の出来事である可能性があります。
 
-- **Locations**: Craft detailed locations that your players can explore. RPG Manager allows you to define not only the physical characteristics of a location but also its inhabitants, its history, and its significance to the world.
+- **場所**: プレイヤーが探索できる詳細な場所を作成します。 RPG Manager を使用すると、場所の物理的特徴だけでなく、その場所の住民、その歴史、世界にとっての重要性も定義できます。
 
-- **Clues**: Develop a series of clues that can guide your players through the world. These clues can take many forms – an ancient artifact, a cryptic prophecy, a rumor overheard in a tavern – and can be linked to various events, locations, and non-player characters.
+- **手がかり**: プレーヤーを世界へと導く一連の手がかりを開発します。 これらの手がかりは、古代の遺物、不可解な予言、酒場で耳にした噂など、さまざまな形をとる可能性があり、さまざまなイベント、場所、ノンプレイヤー キャラクターに関連付けることができます。
 
-By developing these elements, you can create a rich tapestry for your players to interact with.
+これらの要素を開発することで、プレイヤーが対話できる豊かなタペストリーを作成できます。
 
-## 5. Running a Campaign
+## 5. キャンペーンの実施
 
-Once you have created your world, developed your adventures, and populated your game with well-rounded non-player characters, the next step is to actually run the campaign. This is where all of your hard work and preparation come into play. Running a campaign involves orchestrating the sessions, managing the player characters, and navigating the storylines as they unfold.
+世界を作成し、冒険を展開し、バランスの取れたノンプレイヤー キャラクターをゲームに追加したら、次のステップは実際にキャンペーンを実行することです。 ここであなたの努力と準備がすべて活かされます。 キャンペーンの実行には、セッションの調整、プレイヤー キャラクターの管理、展開に応じたストーリーのナビゲートが含まれます。
 
-RPG Manager is not just a tool for preparation, but also an invaluable companion for the actual gameplay. It will help you keep track of everything that happens during a session, from the actions of the player characters to the progress of the storyline. It's also an excellent tool for improvisation, providing you with quick access to all the necessary information and making it easier to adapt to unexpected twists and turns.
+RPG Manager は準備のためのツールであるだけでなく、実際のゲームプレイの貴重な相棒でもあります。 これは、プレイヤー キャラクターのアクションからストーリーの進行状況まで、セッション中に発生するすべてのことを追跡するのに役立ちます。 また、即興演奏に最適なツールでもあり、必要なすべての情報にすばやくアクセスでき、予期せぬ展開にも簡単に対応できます。
 
-As the storyteller, you are the guide for your players as they navigate through the world you have created. It's your responsibility to ensure that the campaign runs smoothly and that everyone has a good time. This section will provide you with tips and guidelines on how to effectively run a campaign using RPG Manager.
+ストーリーテラーとして、あなたはプレイヤーが作成した世界をナビゲートするガイドとなります。 キャンペーンがスムーズに進行し、全員が楽しい時間を過ごせるようにするのはあなたの責任です。 このセクションでは、RPG マネージャーを使用してキャンペーンを効果的に実行する方法に関するヒントとガイドラインを提供します。
 
-### 5.1. Prepping for a Session
+### 5.1. セッションの準備
 
-Prepping for a session is an essential task for any storyteller, regardless of their style. How you approach this task will vary depending on whether you are a plotter, a sandboxer, or a lazy GM. RPG Manager is flexible enough to cater to all these styles, helping you to prepare in the way that suits you best.
+セッションの準備は、スタイルに関係なく、ストーリーテラーにとって不可欠な作業です。 このタスクにどのように取り組むかは、あなたがプロッターであるか、サンドボックスであるか、または怠惰な GM であるかによって異なります。 RPG Manager は、これらすべてのスタイルに十分に対応できる柔軟性を備えており、最適な方法で準備するのに役立ちます。
 
-- **For Plotters**: If you are a plotter, you probably like to have a well-structured plan for your sessions. RPG Manager can help you outline your session using the story circle, making sure that you have a coherent narrative with a clear beginning, middle, and end. You can plan out the scenes, define the key moments, and prepare the necessary non-player characters, locations, and events.
+- **プロッターの場合**: あなたがプロッターであれば、セッションについてしっかりと構造化された計画を立てることを好むでしょう。 RPG マネージャーは、ストーリー サークルを使用してセッションの概要を説明し、明確な始まり、中間、終わりを持つ一貫した物語を確実に作成するのに役立ちます。 シーンを計画し、重要な瞬間を定義し、必要なノンプレイヤー キャラクター、場所、イベントを準備できます。
 
-- **For Sandboxers**: As a sandboxer, you prefer to create an open world and let your players roam freely. Your prep work will mostly involve creating the world, its inhabitants, and the various plot hooks that the players can choose to pursue. RPG Manager helps you keep track of all these elements, making it easy to access the necessary information during the game and to adapt to the decisions of your players.
+- **サンドボックスユーザー向け**: サンドボックスユーザーは、オープンワールドを作成してプレイヤーを自由に歩き回らせることを好みます。 準備作業には主に、世界とその住民、そしてプレイヤーが追求することを選択できるさまざまなプロット フックの作成が含まれます。 RPG マネージャーは、これらすべての要素を追跡するのに役立ち、ゲーム中に必要な情報に簡単にアクセスし、プレイヤーの決定に適応できるようにします。
 
-- **For Lazy GMs**: If you are a lazy GM, you probably prefer to do minimal prep and improvise as much as possible during the game. RPG Manager can still be a valuable tool for you, as it allows you to quickly jot down notes, create bullet points for the key moments of the session, and have quick access to the essential information about your world.
+- **怠惰な GM の場合**: あなたが怠け者の GM であれば、おそらく最小限の準備をして、ゲーム中にできるだけ即興で演奏することを好むでしょう。 RPG マネージャーは、メモをすばやく書き留めたり、セッションの重要な瞬間の箇条書きを作成したり、自分の世界に関する重要な情報にすばやくアクセスしたりできるため、依然として貴重なツールです。
 
-No matter your style, prepping for a session is crucial to ensure that the game runs smoothly and that your players have a memorable experience. RPG Manager is designed to assist you in this task, making your prep work easier and more efficient.
+スタイルに関係なく、ゲームをスムーズに実行し、プレイヤーに思い出に残るエクスペリエンスを提供するには、セッションの準備が非常に重要です。 RPG マネージャーは、このタスクを支援し、準備作業をより簡単かつ効率的に行うように設計されています。
 
-### 5.2. Taking Notes during Sessions
+### 5.2. セッション中にメモを取る
 
-Taking notes during a session is crucial to keep track of what happens, especially because the decisions made and the events that unfold can have lasting effects on the campaign. RPG Manager facilitates this process by allowing you to easily document the progress of the game, even while in the heat of the moment.
+特に下された決定や展開する出来事はキャンペーンに永続的な影響を与える可能性があるため、セッション中にメモを取ることは何が起こったかを追跡するために非常に重要です。 RPG マネージャーを使用すると、たとえ熱中しているときでも、ゲームの進行状況を簡単に文書化できるため、このプロセスが容易になります。
 
-- **Keeping Track**: During the game, many things will happen that you need to remember for future sessions. This can include character decisions, unexpected plot twists, or new non-player character introductions. With RPG Manager, you can easily note down all these important details, ensuring that you don't forget anything crucial.
+- **追跡**: ゲーム中には、今後のセッションのために覚えておく必要があることがたくさん起こります。 これには、キャラクターの決定、予想外の展開、または新しいノンプレイヤーキャラクターの紹介が含まれる場合があります。 RPG Manager を使用すると、これらすべての重要な詳細を簡単にメモできるため、重要なことを忘れることがなくなります。
 
-- **Flexibility**: Whether you prefer to take detailed notes or just jot down the key points, RPG Manager is flexible enough to accommodate your style. You can write as much or as little as you want, and you can organize your notes in a way that makes sense to you.
+- **柔軟性**: 詳細なメモを取ることを好む場合でも、単に重要なポイントをメモすることを好む場合でも、RPG Manager はあなたのスタイルに対応するのに十分な柔軟性を備えています。 好きなだけ書いたり、少なくしたりすることができ、自分にとって意味のある方法でメモを整理できます。
 
-- **Accessibility**: RPG Manager makes it easy to access your notes during the game. With just a few clicks, you can pull up the information you need, whether it's a non-player character's backstory, a location's description, or the details of a past event.
+- **アクセシビリティ**: RPG マネージャーを使用すると、ゲーム中にメモに簡単にアクセスできます。 数回クリックするだけで、ノンプレイヤー キャラクターのバックストーリー、場所の説明、過去のイベントの詳細など、必要な情報を取得できます。
 
-Taking notes during a session helps you maintain continuity in your campaign and ensures that you don't forget any important details. RPG Manager is designed to make this process as easy and efficient as possible, allowing you to focus on running the game and creating a memorable experience for your players.
+セッション中にメモを取ると、キャンペーンの継続性を維持し、重要な詳細を忘れないようにすることができます。 RPG マネージャーは、このプロセスをできるだけ簡単かつ効率的に行えるように設計されており、ゲームの実行とプレイヤーにとって思い出に残るエクスペリエンスの作成に集中できるようになります。
 
-### 5.3. Managing Scenes
+### 5.3. シーンの管理
 
-Managing scenes is a fundamental aspect of running a session as it involves orchestrating the events that your players will engage with. RPG Manager assists you in organizing and managing these scenes, ensuring that your sessions run smoothly and are engaging for your players.
+シーンの管理は、プレイヤーが参加するイベントの調整に関わるため、セッションを実行するための基本的な側面です。 RPG マネージャーは、これらのシーンの整理と管理を支援し、セッションがスムーズに実行され、プレイヤーにとって魅力的なものになるようにします。
 
-**Scene Organization**
+**シーンの構成**
 
-With RPG Manager, you can organize your scenes in the order you expect them to occur. However, the tool is flexible enough to allow quick adjustments in case your players take an unexpected route. This way, you can ensure that you're always prepared, no matter what your players decide to do.
+RPG マネージャーを使用すると、シーンが発生すると予想される順序でシーンを整理できます。 ただし、このツールは十分な柔軟性があるため、プレイヤーが予期せぬルートを選択した場合に迅速に調整できます。 こうすることで、プレイヤーが何をしようと決めても、常に準備を整えることができます。
 
-**Scene Attributes**
+**シーンの属性**
 
-Each scene in RPG Manager can have several attributes, such as the description, the story circle stage, the type of scene (e.g., Action, Combat, Decision, etc.), the in-game date, and whether or not the scene is exciting. This allows you to have a clear picture of what each scene entails and how it fits into the overall narrative of your session.
+RPG マネージャーの各シーンには、説明、ストーリー サークル ステージ、シーンの種類 (アクション、戦闘、意思決定など)、ゲーム内の日付、シーンが有効かどうかなど、複数の属性を持つことができます。 エキサイティング。 これにより、各シーンが何を伴うのか、そしてそれがセッションの全体的な物語にどのように適合するのかを明確に把握することができます。
 
-**Dynamic Scenes**
+**ダイナミックなシーン**
 
-Sometimes, your players will do something unexpected, and you'll need to create a new scene on the fly. RPG Manager allows you to quickly add new scenes during the session, ensuring that you can adapt to your players' decisions and keep the game flowing smoothly.
+場合によっては、プレイヤーが予期しないことを行うため、その場で新しいシーンを作成する必要がある場合があります。 RPG マネージャーを使用すると、セッション中に新しいシーンをすばやく追加できるため、プレイヤーの決定に適応してゲームをスムーズに進めることができます。
 
-**Easy Access**
+**簡単にアクセス**
 
-During the session, you'll need to access information quickly. RPG Manager makes it easy to navigate between scenes, access the necessary details, and make any required adjustments. This ensures that you can focus on narrating the story and engaging with your players, rather than scrambling to find the information you need.
+セッション中は、情報にすばやくアクセスする必要があります。 RPG マネージャーを使用すると、シーン間の移動、必要な詳細へのアクセス、必要な調整が簡単に行えます。 これにより、必要な情報を慌てて探すのではなく、ストーリーを語り、プレイヤーと交流することに集中できるようになります。
 
-**Optional Scene Creation**
+**オプションのシーン作成**
 
-It's worth noting that the creation of scenes in RPG Manager is entirely optional. The tool is designed to be as flexible as possible to accommodate different styles of play. Whether you prefer to meticulously plan each scene or create them on the fly, RPG Manager supports your preferred approach to storytelling.
+RPG Manager でのシーンの作成は完全にオプションであることに注意してください。 このツールは、さまざまなプレイスタイルに対応できるようにできるだけ柔軟に設計されています。 各シーンを綿密に計画する場合でも、その場で作成する場合でも、RPG Manager はストーリーテリングに対する好みのアプローチをサポートします。
 
-## 6. ChatGPT Integration
+## 6. ChatGPT の統合
 
-Imagine having a creative assistant that not only helps you save time in generating non-player characters but also serves as a sparring partner, providing ideas that align with your campaign's description. Sounds like a dream, right? Well, with RPG Manager's ChatGPT integration, this dream becomes a reality!
+ノンプレイヤー キャラクターの生成にかかる時間を節約するだけでなく、キャンペーンの説明に沿ったアイデアを提供するスパーリング パートナーとしても機能するクリエイティブ アシスタントがいると想像してみてください。 夢のようですね? さて、RPG Manager の ChatGPT 統合により、この夢が現実になります。
 
-ChatGPT can serve as your creative companion, generating entire non-player characters from just a few details, or assisting you step-by-step, suggesting parts of the non-player characters as if working shoulder to shoulder with you. The better and more descriptive your campaign is, the more the generated non-player characters will fit right in.
+ChatGPT は、クリエイティブなコンパニオンとして機能し、ほんの少しの詳細からノンプレイヤー キャラクター全体を生成したり、あなたと肩を並べているかのようにノンプレイヤー キャラクターの一部を提案して段階的に支援したりできます。 キャンペーンがより良く、より説明的であればあるほど、生成されたノンプレイヤー キャラクターがより適切に適合します。
 
-In this section, we will cover privacy concerns, cost implications, how to generate non-player characters with ChatGPT, and how to activate the ChatGPT integration. Let's dive in!
+このセクションでは、プライバシーの問題、コストへの影響、ChatGPT を使用してノンプレイヤー キャラクターを生成する方法、ChatGPT 統合を有効にする方法について説明します。 飛び込んでみましょう！
 
-### 6.1. Privacy Concerns
+### 6.1. プライバシーの問題
 
-When using the ChatGPT integration for non-player characters generation, the campaign description and the non-player characters information are sent to OpenAI servers. The data protection measures implemented by OpenAI ensure that the data is handled securely. However, it is important to be aware that this information is being transmitted and processed externally.
+ノンプレイヤー キャラクターの生成に ChatGPT 統合を使用すると、キャンペーンの説明とノンプレイヤー キャラクターの情報が OpenAI サーバーに送信されます。 OpenAI によって実装されたデータ保護対策により、データが安全に扱われることが保証されます。 ただし、この情報は外部に送信および処理されることに注意することが重要です。
 
-### 6.2. Costs Implications
+### 6.2. コストへの影響
 
-Utilizing the ChatGPT API has an associated cost, which is calculated based on the number of tokens sent in each message. Each message exchanged with the ChatGPT API consumes tokens, and therefore, incurs a cost. It is important to be mindful of this, as frequent use of the ChatGPT integration will result in higher costs.
+ChatGPT API の使用には関連コストがかかり、各メッセージで送信されるトークンの数に基づいて計算されます。 ChatGPT API で交換される各メッセージはトークンを消費するため、コストが発生します。 ChatGPT 統合を頻繁に使用するとコストが高くなるため、この点に留意することが重要です。
 
-### 6.3. Non-player characters generation
+### 6.3. ノンプレイヤーキャラクターの生成
 
-The ChatGPT integration can assist in generating attributes for non-player characters, with the exception of the description attribute. This is done via the wizard, which proposes generations for each attribute during the creation process.
+ChatGPT 統合は、description 属性を除く、ノンプレイヤー キャラクターの属性の生成を支援します。 これはウィザードを介して実行され、作成プロセス中に各属性の世代が提案されます。
 
-### 6.4. How to activate ChatGPT
+### 6.4. ChatGPTを有効にする方法
 
-To activate ChatGPT in RPG Manager, you will need an OpenAI API key. Follow these steps to obtain your key:
+RPG Manager で ChatGPT をアクティブにするには、OpenAI API キーが必要です。 キーを取得するには、次の手順に従ってください。
 
-1. **Sign Up for an OpenAI Account:** Visit the OpenAI website and sign up for an account by clicking on the 'Sign Up' button and following the prompts.
-2. **Generate API Key:** Once you have created your account and logged in, navigate to the 'API' section in your OpenAI account dashboard. Here, you will find the option to generate a new API key. Follow the on-screen instructions to create your key.
-3. **Enter API Key in RPG Manager:** Open RPG Manager and navigate to the settings section. Input your newly generated OpenAI API key into the designated field.
+1. **OpenAI アカウントにサインアップします:** OpenAI Web サイトにアクセスし、[サインアップ] ボタンをクリックしてプロンプトに従ってアカウントにサインアップします。
+2. **API キーの生成:** アカウントを作成してログインしたら、OpenAI アカウント ダッシュボードの「API」セクションに移動します。 ここには、新しい API キーを生成するオプションがあります。 画面上の指示に従ってキーを作成します。
+3. **RPG マネージャーに API キーを入力します。** RPG マネージャーを開き、設定セクションに移動します。 新しく生成された OpenAI API キーを指定されたフィールドに入力します。
 
-## 7. Contributing
+## 7. 貢献する
 
-RPG Manager is an open-source project, and we welcome contributions of all kinds - from code contributions, bug reports, to documentation and any other help you can provide.
+RPG Manager はオープンソース プロジェクトであり、コードの貢献、バグ レポート、ドキュメント、その他のヘルプに至るまで、あらゆる種類の貢献を歓迎します。
 
-### 7.1. Code Contributions
+### 7.1. コードの貢献
 
-If you are a developer and want to contribute to the codebase, please feel free to submit a pull request on our [GitHub repository](https://github.com/carlonicora/obsidian-rpg-manager/). We appreciate contributions that improve the functionality, usability, and overall quality of RPG Manager.
+あなたが開発者で、コードベースに貢献したい場合は、お気軽に [GitHub リポジトリ](https://github.com/carlonicora/obsidian-rpg-manager/) でプル リクエストを送信してください。 RPG Manager の機能、使いやすさ、全体的な品質を向上させる貢献に感謝します。
+### 7.2. バグ報告
 
-### 7.2. Bug Reporting
+RPG Manager の使用中にバグや問題が発生した場合は、[GitHub の問題ページでバグ レポートを送信](https://github.com/carlonicora/obsidian-rpg-manager/issues) してください。 開発者が迅速に問題に対処できるように、問題を再現する手順を含め、問題についてできるだけ詳細を提供してください。
 
-If you encounter any bugs or issues while using RPG Manager, please [submit a bug report on our GitHub issues page](https://github.com/carlonicora/obsidian-rpg-manager/issues). Be sure to provide as much detail as possible about the issue, including the steps to reproduce it, so that our developers can address it promptly.
+### 7.3. ドキュメンテーション：
 
-### 7.3. Documentation:
+適切なドキュメントは、ソフトウェア プロジェクトにとって非常に重要です。 文章を書くのが得意で、RPG Manager ドキュメントの改善に協力したい場合は、ドキュメント リポジトリに貢献することを検討してください。 タイプミスの修正、既存のコンテンツの明確化、新しいコンテンツの作成など、あらゆる貢献には価値があります。
 
-Good documentation is crucial for any software project. If you have a knack for writing and want to help improve the RPG Manager documentation, please consider contributing to our documentation repository. Whether it's fixing typos, clarifying existing content, or creating new content, every contribution is valuable.
+### 7.4. その他の支援方法:
 
-### 7.4. Other Ways to Help:
+他の方法で貢献したい場合は、次のような提案があります。
 
-If you want to contribute in other ways, here are a few suggestions:
+- RPG Manager についての情報を友達やソーシャル メディア ネットワークに広めます。
+- アプリケーションの機能と使いやすさに関するフィードバックを提供します。
+- 新しいユーザーが RPG マネージャーを使い始めるのに役立つチュートリアルまたはガイドを作成します。
 
-- Spread the word about RPG Manager to your friends and social media networks.
-- Provide feedback on the application's features and usability.
-- Create tutorials or guides that help new users get started with RPG Manager.
+### 7.5. コミュニティ
 
-### 7.5. Community
+オープンソース プロジェクトである RPG Manager は、コミュニティのサポートと貢献によって成長しています。 あなたが開発者であっても、ストーリーテラーであっても、あるいは単に手助けしたい人であっても、私たちはあなたのサポートに感謝し、参加することをお勧めします。 [Discord のサポート スレッドに参加してください](https://discord.com/channels/686053708261228577/1022806716343144518)!
 
-Being an open-source project, RPG Manager thrives on the support and contributions of its community. Whether you are a developer, a storyteller, or just someone who wants to help out, we appreciate your support and encourage you to get involved. [Join us on the support thread on Discord](https://discord.com/channels/686053708261228577/1022806716343144518)!
+## 8. よくある質問
 
-## 8. Frequently Asked Questions
+- **手伝ってもいい？**
 
-- **Can I help?**
+   もちろんできます。 RPG Manager はオープンソースなので、新しい機能を提案したり、厄介なバグを解決したりできます。
 
-  Of course you can. RPG Manager is open source, and you can propose new features or solve pesky bugs.
+- **批判があります...**
 
-- **I have a criticism...**
-
-  We truly appreciate all feedback and criticisms as they are crucial in enhancing RPG Manager. Nevertheless, we kindly ask that your feedback is constructive and respectful. It is quite straightforward to point out something that doesn't work or isn't good, but it is infinitely more helpful to provide suggestions for improvement. Keep in mind, RPG Manager is a community project. Therefore, it's up to all of us to contribute and make it the best it can be. Together, we can build something extraordinary! If you have any suggestions or feedback, please share them on [Github Issues](https://github.com/carlonicora/obsidian-rpg-manager/issues). Remember, there are two types of criticisms: constructive ones that help create a better world, and destructive ones made by those who enjoy undermining the efforts of creators working hard to release an open-source project. We obviously prefer the former!
+   すべてのフィードバックと批判は RPG Manager を強化する上で非常に重要であるため、私たちは心から感謝しています。 ただし、建設的かつ敬意を持ったフィードバックをお願いいたします。 機能しないものや良くないものを指摘するのは非常に簡単ですが、改善のための提案を提供する方がはるかに役立ちます。 RPG Manager はコミュニティ プロジェクトであることに注意してください。 したがって、貢献し、それを可能な限り最高のものにするのは私たち全員にかかっています。 一緒に何か素晴らしいものを作り上げましょう！ ご提案やフィードバックがありましたら、[Github Issues](https://github.com/carlonicora/obsidian-rpg-manager/issues) で共有してください。 批判には 2 つのタイプがあることを忘れないでください。より良い世界を作るのに役立つ建設的な批判と、オープンソース プロジェクトのリリースに懸命に取り組んでいるクリエイターの努力を台無しにすることを楽しむ人々による破壊的な批判です。 私たちは明らかに前者を好みます。
